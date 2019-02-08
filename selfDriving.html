@@ -1,0 +1,187 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Self Driving::Rakshith Subramanyam</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<link rel="icon" href="images/favicon.ico">
+	</head>
+	<body>
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Rakshith Subramanyam</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">Home</a></li>
+											<li><a href="index.html#projects">Projects</a></li>
+											<li><a href="index.html#about">About</a></li>
+											<li><a href="index.html#contact">Contact</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<article id="main">
+						<header>
+							<h2>Self Driving Car Test Bed</h2>
+							<!--<h4>using Jackal UGV &amp; Velodyne LIDAR</h4>-->
+						</header>
+						<section class="wrapper style5">
+							<div class="inner">
+
+								<div class="row">
+									<div class="6u 12u$(medium)">
+										<h3>About the Project</h3>
+
+										<p>
+                                            After reading about the Uber autonomous car accident in Tempe, AZ, I was thinking if these accidents could be emulated to study the interaction between human driven vehicles and autonomous vehicles. This thought took its form in the class Electric and Autonomous Vehicle as a class project. This later developed into my Master thesis where I constructed a miniature city and modified the Pheeno Robot to act as a Self driving car.
+                                        </p>
+                                        <p>
+                                            The test bed will make use of a fleet of robots which is a microcosm of an autonomous vehicle performing all the vital tasks like lane following, traffic signal obeying and collision avoidance with other vehicles on the road
+                                        </p>
+
+										<h4>Hardware used:</h4>
+										<ul>
+											<li><b><a href="https://www.raspberrypi.org/products/raspberry-pi-3-model-b/" target="blank" > Raspberry Pi 3</a></b></li>
+											<li><b><a href="https://www.pjrc.com/store/teensy32.html" target="blank" > 32 bit ARM processor</a></b></li>
+											<li><b><a href="https://www.raspberrypi.org/products/camera-module-v2/" target="blank" > Raspberry pi Camera</a></b></li>
+										</ul>
+									</div>
+
+									<div class="6u$ 12u$(medium)">
+											<span class="image fit"><img src="images/selfDriving10.gif" alt="Pheeno Robot" /></span>
+									</div>
+
+								</div>
+
+								<hr />
+
+								<h3 align="left">Skills Involved</h3>
+								<ul>
+                                    <li align="left">openCV in Python for real-time image processing</li>
+									<li align="left">C++ for real-time embedded control</li>
+									<li align="left">ROS</li>
+									<li align="left">Modelling and control algorithms</li>
+									<li align="left">IR/LIDAR data handling</li>
+									<li align="left">Machine perception</li>
+                                    <li align="left">Ad-HOC networking</li>
+                                    <li align="left">Wireless networking using TCP/IP protocols</li>
+									<li align="left"><b><a href="http://gazebosim.org/" target="blank" > Gazebo</a></b></li>
+									<li align="left">Troubleshooting real robot hardware</li>
+								</ul>
+
+								<hr />
+                                <img src="images/selfDriving9.png" alt="Italian Trulli">
+                                <h3>Operation</h3>
+
+                                <p>
+                                This project is about developing an autonomous vehicle test bed which can be used to conduct studies on the interaction between human driven vehicles and autonomous vehicles on the road. The test bed will make use of a fleet of robots which is a microcosm of an autonomous vehicle performing all the vital tasks like lane following, traffic signal obeying and collision avoidance with other vehicles on the road. 
+                               </p> 
+                                
+								<div class="row">
+                                    <div class="6u 12u$(medium)">
+                                       <p>
+                                        The robots use real time image processing and closed loop control techniques to achieve automation. The test bed also features a manual control mode where a user can choose to control the car with a joystick by viewing a video relayed to the control station. Stochastic rogue vehicle processes will be introduced into
+                                        the system which will emulate random behaviors in an autonomous vehicle. The test bed as experimented to perform a comparative study of driving capabilities of the miniature self driving car and a human driver.
+                                        </p>
+                                    </div>
+                                        
+                                    <div class="6u$ 12u$(medium)">
+                                        <span class="image fit"><img src="images/selfDriving3.png" alt="Pheeno Robot Exploded" /></span>
+                                    </div>
+
+                                </div>
+                                <p>
+                                    The Project was divided into hardware and software section. Hardware section included the selection of the robot to be used and construction of the physical test bed and the software section included the sensing and control algorithms.
+                                </p>
+                                <div class="row">                                
+                                    <div class="column">
+                                        <span class="image fit"><img src="images/selfDriving4.png" alt="Lane Detection" /></span>
+                                    </div>
+
+                                    <div class="column">
+                                        <span class="image fit"><img src="images/selfDriving5.png" alt="Lane Detection" /></span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="6u 12u$(medium)">
+                                        <p>
+                                            The software and the control is the major portion of the project. A kinematic model for the robot was obtained and a model for the motor was also obtained. The system used a PID control algorithm and took its feed back from the image systems.
+                                        </p>
+
+                                        <p>
+                                            The Image system captures the current frame and pipes it for detecting the lanes on the road first.Many operations including Smoothening, Color Ranging and lane detection algorithms are performed on the image to extract the lanes. With this estimate of the lanes an error is computed between the center of the lane and the center of the robot. This error is used to correct the robots position on the Road using the PID controller.
+                                        </p>
+                                    </div>
+                                    <div class="6u$ 12u$(medium)">
+                                        <span class="image fit"><img src="images/selfDriving8.png" alt="Control Loop" /></span>
+                                    </div>
+                                </div>
+                                       
+                                <div class="row">
+                                    <div class="6u 12u$(medium)">
+                                        <p>
+                                            Other vehicles on the road were detected and avoided. The speed of the vehicle ahead was also estimated to efficently navigate without colliding. The robot was also programmed to classify traffic signs and would have equal probablity for turning in any direction in an intersection.                                           
+                                        </p>
+                                        
+                                        <p>
+                                            With all these features the robot behaved like a selfdriving car. To further add more features V2X communication was enabbled using AD-Hoc protocol. The intersections were modelled as a local host to the cars comming near them. An Unique protocol was designed where in each element in the system would identify itself to the other vehicles in the system. This communication methodology created a mesh that an user can monitor to know whats happening in the test bed.                                            
+                                        </p>
+                                   
+                                    
+                                    </div>
+                                    
+                                    <div class="6u$ 12u$(medium)">
+                                        <span class="image fit"><img src="images/selfDriving6.png" alt="Green Signal" /></span>
+                                    </div>
+                                    
+                                </div>
+                                	<hr />
+                                    <p align="left"><b>Want to learn more?</b> Check out my <a href="Rakshith_Thesis.pdf" target="blank">Thesis</a> or send me an <a href="mailto:rakshith.subramanyam@asu.edu">e-mail</a> using the links below.</p>
+                                
+                            </div>
+
+						</section>
+					</article>
+
+
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="icons">
+							<li><a href="https://github.com/Rakshith-2905/" target="blank" class="icon fa-github fa-lg"><span class="label">Github</span></a></li>
+							<li><a href="https://www.linkedin.com/in/rakshith-subri/" target="blank" class="icon fa-linkedin fa-lg"><span class="label">Email</span></a></li>
+							<li><a href="mailto:rakshith.subramanyam@asu.edu" class="icon fa-envelope-o fa-lg"><span class="label">Email</span></a></li>
+						</ul>
+						<ul class="copyright">
+							<li>Template: <a href="https://html5up.net/spectral"> SPECTRAL</a></li><li>From: <a href="http://html5up.net">HTML5 UP</a></li>						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
