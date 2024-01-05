@@ -1,0 +1,77 @@
+<style>
+    /* Mobile styles */
+    @media only screen and (max-width: 768px) {
+        .sticky-sidebar {
+            position: static; /* Makes the sidebar scrollable along with the rest of the content on mobile */
+            overflow-y: visible; /* Make scrollbar visible on mobile */
+        }
+        .twitter-feed {
+            display: none; /* Hide Twitter feed on mobile */
+        }
+    }
+
+    /* Desktop styles */
+    @media only screen and (min-width: 769px) {
+        .sticky-sidebar {
+            position: sticky; /* Makes the sidebar sticky on desktop */
+            /* top: -50px; Move the profile section up */
+            overflow-y: visible; /* Make scrollbar visible on desktop */
+        }
+        .twitter-feed {
+            height: 300px;
+            overflow-y: auto; /* Make Twitter feed scrollable on desktop */
+        }
+    }
+</style>
+
+<div class="col-lg-4 px-0 sticky-sidebar">
+    <div class="text-center p-5">
+        <!-- Profile section -->
+        <img src="{{ site.avatar | relative_url }}" alt="{{ site.title }}" class="img-fluid rounded-circle mb-3"
+            style="width:200px;">
+        <h2 class="single-line">{{ site.name }}</h2>
+        <p class="position">{{ site.position }}</p>
+        <p class="affiliation"><a href="{{ site.affiliation_link }}">{{ site.affiliation }}</a></p>
+        <p class="email"><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+
+        <!-- Social IDs -->
+        <div class="social-icons">
+            <a href="{{ site.google_scholar }}" target="_blank"><i class="fab fa-google"></i></a>
+            <a href="{{ site.cv_link }}" target="_blank"><i class="fas fa-file-alt"></i></a>
+            <a href="{{ site.github_link }}" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="{{ site.linkedin }}" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="{{ site.twitter }}" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+
+        <!-- Twitter Feed
+        <section class="twitter-feed">
+            <div id="twitter-feed"></div>
+        </section>  -->
+    </div>
+</div>
+
+<!-- Twitter API Script
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<script>
+    function loadTweets() {
+        twttr.ready(function (twttr) {
+            twttr.widgets.createTimeline(
+                {
+                    sourceType: "profile",
+                    screenName: "{{ site.twitter_handle }}"
+                },
+                document.getElementById("twitter-feed"),
+                {
+                    theme: "light"
+                }
+            ).then(function success(el) {
+                console.log("Successfully embedded a timeline.")
+            }, function failure(err) {
+                console.error("Failed to embed a timeline: ", err);
+            });
+        });
+    }
+    // Call the function
+    loadTweets();
+</script> -->

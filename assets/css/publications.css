@@ -1,0 +1,145 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+}
+
+.fa {
+  margin: 10px;
+  font-size: 40px; /* Increased icon size */
+}
+
+.nav-link {
+  font-size: 20px;
+  color: #007bff;
+}
+
+.nav-link:hover {
+  color: #0056b3;
+}
+
+a {
+  color: #007bff;
+}
+
+a:hover {
+  color: #0056b3;
+}
+
+.btn-outline-primary {
+  border-color: #007bff;
+}
+
+.btn-outline-primary:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+.bio {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sticky-sidebar {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+  border-right: 1px solid #f8f9fa;  /* made the partition line more subtle */
+}
+
+.profile-name {
+  white-space: nowrap; /* Ensures name is on one line */
+}
+
+.single-line {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  font-size: 28px; /* Adjust the font size as needed */
+}
+
+.affiliation {
+  margin-bottom: 5px;
+}
+
+.email {
+  margin-bottom: 5px;
+}
+
+.email a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.email a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  font-size: 35px;
+  margin-right: 10px;
+  color: #007bff;
+}
+
+.social-icons a:hover {
+  color: #0056b3;
+}
+
+/* Add your custom styling for the publications page here */
+
+/* General styles */
+.publication {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.thumbnail {
+  width: 150px;
+  margin-right: 20px;
+}
+
+.details {
+  flex-grow: 1;
+}
+
+h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.authors,
+.conference {
+  margin-bottom: 10px;
+}
+
+.additional-info {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.links li {
+  margin-bottom: 5px;
+}
+
+.links a {
+  text-decoration: none;
+  color: #333;
+}
+
+body > .container-fluid {
+  margin-top: 0;
+  margin-left: 0;
+}
+
+body > .container-fluid > .row {
+  margin-top: 0;
+  margin-left: 0;
+}

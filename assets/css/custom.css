@@ -1,0 +1,256 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.fa {
+    margin: 10px;
+    font-size: 40px; /* Increased icon size */
+}
+
+.nav-link {
+    font-size: 20px;
+    color: #007bff;
+}
+
+.nav-link:hover {
+    color: #0056b3;
+}
+
+a {
+    color: #007bff;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+.btn-outline-primary {
+    border-color: #007bff;
+}
+
+.btn-outline-primary:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.bio {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.sticky-sidebar {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+    border-right: 1px solid #f8f9fa;  /* made the partition line more subtle */
+}
+
+.profile-name {
+    white-space: nowrap; /* Ensures name is on one line */
+}
+
+.single-line {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    font-size: 28px; /* Adjust the font size as needed */
+}
+
+.affiliation {
+    margin-bottom: 5px;
+}
+
+.email {
+    margin-bottom: 5px;
+}
+
+.email a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.email a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.social-icons a {
+    font-size: 35px;
+    margin-right: 10px;
+    color: #007bff;
+}
+
+.social-icons a:hover {
+    color: #0056b3;
+}
+.single-line {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+    font-size: 31px; /* Adjust the font size as needed */
+}
+
+.nav-link {
+    font-size: 20px;
+    color: #007bff;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #0056b3;
+}
+
+.link-item {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.link-item a {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.link-item a:hover {
+    background-color: #0056b3;
+}
+
+.bio {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* General styles */
+.publication {
+    display: flex;
+    margin-bottom: 40px;
+  }
+  
+  .thumbnail {
+    width: 150px;
+    margin-right: 20px;
+  }
+  
+  .details {
+    flex-grow: 1;
+  }
+  
+  h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  
+  .authors, .conference {
+    margin-bottom: 10px;
+  }
+  
+  .additional-info {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .links li {
+    margin-bottom: 5px;
+  }
+  
+  .links a {
+    text-decoration: none;
+    color: #333;
+  }
+/* Navigation Bar */
+.navbar {
+    background-color: #f8f9fa;
+    border-bottom: none;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: #3366cc;
+}
+
+.navbar-nav .nav-link {
+    color: #555;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #3366cc;
+}
+
+.navbar-nav .nav-item {
+    border-bottom: 3px solid transparent;
+    transition: border-color 0.3s;
+}
+
+.navbar-nav .nav-item:hover {
+    border-bottom-color: #3366cc;
+}
+
+.nav-item a.active {
+    font-weight: 600;  /* Make the active page link bold */
+    color: #002966;  /* Make the active page link slightly darker */
+}
+
+/* News Section */
+.news {
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.news ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.news li {
+    margin-bottom: 10px;
+}
+
+.news a {
+    text-decoration: none;
+    color: #3366cc;
+}
+
+.news a:hover {
+    color: #0056b3;
+}
+
+/* About Me */
+.about-me-title {
+    font-size: 24px;
+    /* font-weight: bold; */
+    margin-bottom: 20px;
+}
+
+/* Recent News */
+.recent-news-title {
+    font-size: 24px;
+    /* font-weight: bold; */
+    margin-bottom: 20px;
+}
+
+.recent-news-content {
+    overflow-y: auto;
+    max-height: 300px;
+}
+.nav-item a.active {
+    /* Add your hover styles here. For example: */
+    color: #007BFF; /* Change the color as per your needs */
+    text-decoration: underline; /* If you have underline on hover */
+}

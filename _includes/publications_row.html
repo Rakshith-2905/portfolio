@@ -1,0 +1,29 @@
+<li>
+  <div class="pub-row">
+    <div class="col-sm-3 abbr" style="position: relative;padding-right: 15px;padding-left: 15px;">
+      <img src="{{ include.img_src }}" class="teaser img-fluid z-depth-1">
+      <abbr class="badge">{{ include.conference_abbr }}</abbr>
+    </div>
+    <div class="col-sm-9" style="position: relative;padding-right: 15px;padding-left: 20px;">
+      <div class="title"><a href="{{ include.paper_link }}">{{ include.paper_title }}</a></div>
+      <div class="author"><strong>{{ include.author }}</strong></div>
+      <div class="periodical"><em>{{ include.conference_name }}, {{ include.publication_year }}.</em></div>
+      <div class="links">
+        <a href="{{ include.paper_pdf_link }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px; color: #000000; border: 1px solid #000000;">PDF</a>
+        <a href="{{ include.code_link }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px; color: #000000; border: 1px solid #000000;">Code</a>
+        {% if include.slides_link %}
+        <a href="{{ include.slides_link }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px; color: #000000; border: 1px solid #000000;">Slides</a>
+        {% endif %}
+        {% if include.video_link %}
+        <a href="{{ include.video_link }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px; color: #000000; border: 1px solid #000000;">Video</a>
+        {% endif %}
+        {% if include.poster_link %}
+        <a href="{{ include.poster_link }}" class="btn btn-sm z-depth-0" role="button" target="_blank" style="font-size:12px; color: #000000; border: 1px solid #000000;">Poster</a>
+        {% endif %}
+        {% if include.spotlight %}
+        <strong><i style="color:#e74d3c">Spotlight Presentation</i></strong>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</li>

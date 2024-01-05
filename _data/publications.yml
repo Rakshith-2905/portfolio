@@ -1,0 +1,84 @@
+- title: Target-Aware Generative Augmentations for Single-Shot Adaptation
+  thumbnail: assets/img/SiSTA/teaser1.jpg
+
+  authors:
+    - Kowshik Thopalli
+    - Rakshith Subramanyam
+    - Pavan Turaga
+    - Jayaraman J Thiagarajan
+  conference:  International Conference on Machine Learning (ICML), 2023
+  additional_info: 
+  tags:
+    - tag2
+    - tag3
+  links:
+    paper: https://arxiv.org/pdf/2305.13284.pdf
+    website: https://rakshith-2905.github.io/SiSTA/
+    code: https://github.com/Rakshith-2905/SiSTA
+    poster: https://rakshith-2905.github.io/SiSTA/
+    slides: https://www.dropbox.com/s/lgfrolbw3kz55by/ICASSP_SISTA.pptx?dl=0
+    video: https://www.youtube.com/watch?v=2bQwT548NFI&embeds_referring_euri=https%3A%2F%2Frakshith-2905.github.io%2F&feature=emb_imp_woyt
+
+- title: Single-Shot Domain Adaptation via Target-Aware Generative Augmentations
+  thumbnail: assets/img/SiSTA/SiSTA_teaser2.png
+  authors:
+    - Rakshith Subramanyam
+    - Kowshik Thopalli
+    - Spring Berman
+    - Pavan Turaga
+    - Jayaraman J Thiagarajan
+  conference: International Conference on Acoustics, Speech and Signal Processing (ICASSP), 2023
+  additional_info: 
+  tags:
+    - tag2
+    - tag3
+  links:
+    paper: https://arxiv.org/pdf/2305.13284.pdf
+    website: https://rakshith-2905.github.io/SiSTA/
+    code: https://github.com/Rakshith-2905/SiSTA
+    poster: https://rakshith-2905.github.io/SiSTA/
+    slides: https://www.dropbox.com/s/lgfrolbw3kz55by/ICASSP_SISTA.pptx?dl=0
+    video: https://www.youtube.com/watch?v=2bQwT548NFI&embeds_referring_euri=https%3A%2F%2Frakshith-2905.github.io%2F&feature=emb_imp_woyt
+
+- title: Contrastive Knowledge-Augmented Meta-Learning for Few-Shot Classification
+  thumbnail: assets/img/CAML/meta-model.png
+  authors:
+    - Rakshith Subramanyam
+    - Mark Heimann
+    - TS Jayram
+    - Rushil Anirudh
+    - Jayaraman J Thiagarajan
+  conference: Winter Conference on Applications of Computer Vision (WACV), 2023
+  additional_info: Poster Presentation
+  tags:
+    - tag2
+    - tag3
+  links:
+    paper: https://openaccess.thecvf.com/content/WACV2023/papers/Subramanyam_Contrastive_Knowledge-Augmented_Meta-Learning_for_Few-Shot_Classification_WACV_2023_paper.pdf
+    website: https://openaccess.thecvf.com/content/WACV2023/html/Subramanyam_Contrastive_Knowledge-Augmented_Meta-Learning_for_Few-Shot_Classification_WACV_2023_paper.html
+    code: https://github.com/Rakshith-2905/CAML
+    poster: https://www.example.com/publication2/poster
+    slides: https://www.example.com/publication2/slides
+    video: https://www.example.com/publication2/video
+
+- title: Improved StyleGAN-v2 based Inversion for Out-of-Distribution Images
+  thumbnail: assets/img/SphinX/ISIC_AFHQ.png
+  authors:
+    - Rakshith Subramanyam
+    - Vivek Narayanaswamy
+    - Mark Naufel
+    - Andreas Spanias
+    - Jayaraman J. Thiagarajan
+  conference: International Conference on Machine Learning (ICML), 2022
+  additional_info: Spotlight Presentation
+  tags:
+    - tag1
+    - tag2
+  links:
+    paper: https://proceedings.mlr.press/v162/subramanyam22a.html
+    website: https://icml.cc/virtual/2022/spotlight/17162
+    code: https://icml.cc/virtual/2022/spotlight/17162
+    poster: https://icml.cc/virtual/2022/spotlight/17162
+
+
+# Add more publications as needed

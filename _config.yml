@@ -1,0 +1,48 @@
+# Basic Information 
+name: Rakshith Subramanyam
+position: Ph.D. Student
+affiliation: Arizona State University
+email: rakshith.subramanyam@asu.edu
+
+# Search Engine Optimization (SEO)
+# The following information is used to improve the website traffic from search engines, e.g., Google.
+keywords: minimal light
+description: Rakshith Subramanyam's personal reserach website
+canonical: https://www.rakshithsubramanyam.com/
+
+# Links 
+# If you don't need one of them, you may delete the corresponding line.
+google_scholar: https://scholar.google.com/citations?user=bZhPl80AAAAJ&hl=en
+cv_link: assets/files/rakshithsubra_resume.pdf
+github_link: https://github.com/rakshith-2905
+linkedin: https://www.linkedin.com/in/rakshith-subri/
+twitter: https://twitter.com/rakshith_subra
+# Twitter Details
+twitter_handle: rakshith_subra
+
+collections:
+  - publications
+
+defaults:
+  - scope:
+      path: ""
+      type: publications
+    values:
+      layout: publications
+
+# Images (e.g., your profile picture and your website's favicon) 
+# "favicon" and "favicon_dark" are used for the light and dark modes, respectively. 
+avatar: /assets/img/avatar3.png
+favicon: /assets/img/favicon.png
+favicon_dark: /assets/img/favicon-dark.png
+
+# The following files will be removed from the generated website.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - README_zh_Hans.md
+  - README_zh_Hant.md
+  - README_de.md
+  - LICENSE
+  - minimal-light.gemspec
