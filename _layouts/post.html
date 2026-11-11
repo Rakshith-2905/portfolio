@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<main>
+  <article class="post-wrap">
+    <a class="wp-back" href="{{ '/writing/' | relative_url }}">← all writing</a>
+    <div class="p-meta">
+      <span class="n-kind {{ page.kind | downcase }}">{{ page.kind }}</span>
+      <span>{{ page.date | date: "%b %-d, %Y" }}</span>
+      <span aria-hidden="true">·</span>
+      <span>{% include read-time.html content=content %}</span>
+    </div>
+    <h1>{{ page.title }}</h1>
+    <div class="post-body">
+      {{ content }}
+    </div>
+  </article>
+</main>

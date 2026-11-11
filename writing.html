@@ -1,0 +1,28 @@
+---
+layout: default
+permalink: /writing/
+title: Writing
+---
+<main>
+  <section class="block writing-page">
+    <div class="wrap">
+      <a class="wp-back" href="{{ '/' | relative_url }}">← home</a>
+      <div class="sec-head">
+        <div class="eyebrow">Writing</div>
+        <h2>Writing &amp; experiments</h2>
+        <p>Opinions on where AI is heading, experiments I run, and small things you can play with. Also posted to LinkedIn.</p>
+      </div>
+      <div class="wlist">
+        {% for post in site.posts %}
+        <a class="note" href="{{ post.url | relative_url }}">
+          <div class="n-main">
+            <h3><span class="n-kind {{ post.kind | downcase }}">{{ post.kind }}</span> {{ post.title }}</h3>
+            <p>{{ post.excerpt | strip_html | truncate: 180 }}</p>
+          </div>
+          <div class="n-date">{{ post.date | date: "%b %-d, %Y" }}<div class="n-rt">{% include read-time.html content=post.content %}</div><div class="arw">→</div></div>
+        </a>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+</main>

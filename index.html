@@ -1,0 +1,226 @@
+---
+layout: default
+---
+<main id="top">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div>
+          <h1 class="hero-name">Rakshith Subramanyam</h1>
+          <p class="hero-title">Founding Engineer → Chief Product Officer, Axio · PhD, Electrical &amp; Computer Engineering, ASU 2024</p>
+          <p class="lead">I build AI products, and research what makes them reliable.</p>
+          <p class="who">At Axio, that's an AI tutor that opened access to 10,000+ students and a multi-agent system that rebuilds university courses on demand. The research half is about reliability — getting models to know when they're wrong, and to hold up when conditions shift.</p>
+          <div class="hero-links">
+            <a class="btn solid" href="{{ site.resume | relative_url }}">Résumé</a>
+            <a class="btn" href="mailto:{{ site.email }}">Email</a>
+            <a class="btn" href="{{ site.social.linkedin }}">LinkedIn</a>
+            <a class="btn" href="{{ site.social.scholar }}">Scholar</a>
+          </div>
+          <p class="collab"><span class="dot" aria-hidden="true"></span>Open to collaborations and conversations. Have an interesting idea? <a href="mailto:{{ site.email }}?subject=Hello%20from%20your%20site">Say hello →</a></p>
+        </div>
+        <div class="portrait">
+          <span class="frame f-tl"></span>
+          <span class="frame f-br"></span>
+          <img src="{{ '/assets/img/rakshith.jpg' | relative_url }}" alt="Rakshith Subramanyam">
+        </div>
+      </div>
+
+      <div class="receipts">
+        <div class="receipts-in">
+          <div class="rcol">
+            <div class="rlabel">Published</div>
+            <div class="venues">
+              <span class="venue">ICML</span><span class="venue">ECCV</span>
+              <span class="venue">ICASSP</span><span class="venue">WACV</span>
+            </div>
+          </div>
+          <div class="rdiv"></div>
+          <div class="rcol">
+            <div class="rlabel">In production</div>
+            <div class="outs">
+              <div class="out"><span class="n">10,000+</span><span class="l">students with access</span></div>
+              <div class="out"><span class="n">25,000+</span><span class="l">learning activities created</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INDUSTRY TIMELINE -->
+  <section class="block" id="work">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="eyebrow">Product · Axio</div>
+        <h2>Research into product, in two years.</h2>
+        <p class="tl-story">I joined out of my PhD as founding engineer, and was promoted to CPO as the work started shipping. Roles above the line, the products they produced below it.</p>
+      </div>
+      <div class="tl-caption">2024 <span class="ln"></span> 2026</div>
+      <div class="timeline n5 wide">
+        <div class="tcard up" style="grid-column:1">
+          <div class="tdate">Jul 2024 · team of 5</div>
+          <p class="trole">Founding Engineer</p>
+          <ul class="tbul">
+            <li>Built the AI platform from the first line of code: tutor, RAG, course assistant, agentic core</li>
+            <li>Moved the stack to an agentic architecture</li>
+            <li>Uncertainty estimation for noisy input</li>
+            <li>Animation engine for visual explainers</li>
+          </ul>
+        </div>
+        <div class="tcard down prod" style="grid-column:2">
+          <div class="tdate">2024–25 · shipped</div>
+          <p class="trole">AI Tutor</p>
+          <p class="tdesc">Built for reliability — several LLMs check each other in real time, and it guides students instead of handing over answers. At a partner school in Kazakhstan, 81% said it helped them think more clearly.</p>
+          <div class="tstats">
+            <span class="tstat"><b>98%</b>retention</span>
+            <span class="tstat"><b>−60%</b>latency</span>
+            <span class="tstat"><b>+28%</b>precision</span>
+          </div>
+        </div>
+        <div class="tcard up" style="grid-column:3">
+          <div class="tdate">Jul 2025</div>
+          <p class="trole">Founding Engineer · AI lead</p>
+          <ul class="tbul">
+            <li>Given the whole AI org</li>
+            <li>Knowledge graphs + LLMs (GraphSAGE) for grounding</li>
+            <li>PPT / video / image generation</li>
+            <li>Automated grading with handwriting recognition</li>
+          </ul>
+        </div>
+        <div class="tcard down prod" style="grid-column:4">
+          <div class="tdate">2025–26 · shipping</div>
+          <p class="trole">Course Modernizer</p>
+          <p class="tdesc">A multi-agent system that rebuilds a university course on demand. I ran discovery with instructors, wrote both the product and technical specs, and built the agent core.</p>
+          <div class="tstats">
+            <span class="tstat"><b>5→23</b>faculty in a semester</span>
+          </div>
+        </div>
+        <div class="tcard up" style="grid-column:5">
+          <div class="tdate">Mar 2026 · team of 13</div>
+          <p class="trole">Chief Product Officer</p>
+          <ul class="tbul">
+            <li>Own the engineering org, product roadmap and product KPIs</li>
+            <li>Scaled team 5→13; devs into architects</li>
+            <li>3× faster shipping; explicit tech-debt balance</li>
+          </ul>
+        </div>
+        <div class="axis">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot big"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESEARCH TIMELINE -->
+  <section class="block" id="research">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="eyebrow">Research · PhD</div>
+        <h2>Selected research.</h2>
+        <p class="tl-story">My PhD at Arizona State (2019–2024) kept circling one question: can a model tell when it's about to be wrong? The five papers below trace that, in order — then three <b>applied projects</b> carry the same thread into today. (Internships at Stanford Research Institute in 2020 and Lawrence Livermore National Lab in 2021–23 along the way.)</p>
+      </div>
+      <div class="tl-caption">2022 <span class="ln"></span> 2026</div>
+      <div class="timeline n8 wide">
+        <div class="tcard up" style="grid-column:1">
+          <div class="tdate">2022 · ICML Spotlight</div>
+          <p class="trole">SPHInX</p>
+          <p class="tdesc">Generative models that hold up on out-of-distribution images.</p>
+          <a class="tlink" href="{{ '/writing/sphinx/' | relative_url }}">↗ read</a>
+        </div>
+        <div class="tcard down" style="grid-column:2">
+          <div class="tdate">2023 · ICML</div>
+          <p class="trole">SiSTA</p>
+          <p class="tdesc">Adapt a model to a new domain from a single example.</p>
+          <a class="tlink" href="{{ '/writing/sista/' | relative_url }}">↗ read</a>
+        </div>
+        <div class="tcard up" style="grid-column:3">
+          <div class="tdate">2023 · WACV</div>
+          <p class="trole">CAML</p>
+          <p class="tdesc">Learn new categories from a few examples, using outside knowledge.</p>
+          <a class="tlink" href="{{ '/writing/caml/' | relative_url }}">↗ read</a>
+        </div>
+        <div class="tcard down" style="grid-column:4">
+          <div class="tdate">2024 · ECCV</div>
+          <p class="trole">DECIDER</p>
+          <p class="tdesc">Detect when a vision model is about to fail, using vision-language priors.</p>
+          <a class="tlink" href="{{ '/writing/decider/' | relative_url }}">↗ read</a>
+        </div>
+        <div class="tcard up" style="grid-column:5">
+          <div class="tdate">2024 · ICASSP</div>
+          <p class="trole">CREPE</p>
+          <p class="tdesc">Read relationships between objects by learning to prompt CLIP.</p>
+          <a class="tlink" href="{{ '/writing/crepe/' | relative_url }}">↗ read</a>
+        </div>
+        <div class="tcard down applied" style="grid-column:6">
+          <div class="tdate">2025 · Applied project</div>
+          <p class="trole">Political-Bias Benchmark</p>
+          <p class="tdesc">Estimating and comparing the political lean of LLMs.</p>
+          <a class="tlink" href="{{ '/writing/political-bias-benchmark/' | relative_url }}">↗ read</a>
+        </div>
+        <div class="tcard up applied" style="grid-column:7">
+          <div class="tdate">2025 · Applied project</div>
+          <p class="trole">VLM Cue Bias</p>
+          <p class="tdesc">When image and text disagree, which does a vision-language model trust?</p>
+        </div>
+        <div class="tcard down applied" style="grid-column:8">
+          <div class="tdate">2026 · Applied project</div>
+          <p class="trole">Image Certifier</p>
+          <p class="tdesc">Making images tamper-evident and traceable, against deepfakes.</p>
+          <a class="tlink" href="{{ '/writing/certifying-real-images/' | relative_url }}">↗ read</a>
+        </div>
+        <div class="axis">
+          <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot applied"></span><span class="dot applied"></span><span class="dot applied"></span>
+        </div>
+      </div>
+      <p class="tl-close">The arc bends toward one thing: <b>knowing when a model is wrong, and keeping it steady when the world shifts</b> — from peer-reviewed papers to applied projects, and the same problem I now build into products. Full list and a patent on <a href="{{ site.social.scholar }}" style="color:var(--navy-2);font-weight:600">Google Scholar</a>.</p>
+    </div>
+  </section>
+
+  <!-- WRITING TEASER -->
+  <section class="block" id="writing">
+    <div class="wrap">
+      <div class="sec-head">
+        <div class="eyebrow">Writing</div>
+        <h2>Writing &amp; experiments</h2>
+        <p>Notes on where AI is heading, experiments I run, and small things to try. New posts also go out on LinkedIn.</p>
+      </div>
+      <div class="notes">
+        {% for post in site.posts limit:3 %}
+        <a class="note" href="{{ post.url | relative_url }}">
+          <div class="n-main">
+            <h3><span class="n-kind {{ post.kind | downcase }}">{{ post.kind }}</span> {{ post.title }}</h3>
+            <p>{{ post.excerpt | strip_html | truncate: 150 }}</p>
+          </div>
+          <div class="n-date">{{ post.date | date: "%b %-d, %Y" }}<div class="n-rt">{% include read-time.html content=post.content %}</div><div class="arw">→</div></div>
+        </a>
+        {% endfor %}
+      </div>
+      <p class="read-all"><a href="{{ '/writing/' | relative_url }}">All writing →</a></p>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="block" id="about">
+    <div class="wrap">
+      <div class="about">
+        <div>
+          <div class="eyebrow" style="margin-bottom:18px">About</div>
+          <p>I finished my PhD in Electrical &amp; Computer Engineering at Arizona State University in 2024. During it I interned at Stanford Research Institute and spent two summers at Lawrence Livermore National Lab, where most of my papers came from.</p>
+          <p>Since then I've been at Axio, building AI for education, joining as founding engineer and becoming Chief Product Officer. I'm looking for the next hard problem — at a frontier lab or a research org.</p>
+          <p>I'm also always open to collaborating. If you have an interesting idea, a research question, or just want to talk through a problem, <a href="mailto:{{ site.email }}">send me a note</a>. I read everything.</p>
+        </div>
+        <div>
+          <h4>Contact · open to collaborations</h4>
+          <div class="contact">
+            <a href="mailto:{{ site.email }}"><span class="k">email</span><span>{{ site.email }} ↗</span></a>
+            <a href="{{ site.social.linkedin }}"><span class="k">linkedin</span><span>rakshith-subri ↗</span></a>
+            <a href="{{ site.social.scholar }}"><span class="k">scholar</span><span>Google Scholar ↗</span></a>
+            <a href="{{ site.social.github }}"><span class="k">github</span><span>@Rakshith-2905 ↗</span></a>
+            <a href="{{ site.resume | relative_url }}"><span class="k">résumé</span><span>Download PDF ↗</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

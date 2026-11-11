@@ -1,7 +1,11 @@
-_site
-.sass-cache
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+vendor/
 Gemfile.lock
-*.gem
 .DS_Store
-.jekyll-cache
-git-update.sh
+_preview/
+_notes/
+*.tgz
+*.zip

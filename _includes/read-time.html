@@ -1,0 +1,4 @@
+{%- assign rt_words = include.content | strip_html | number_of_words -%}
+{%- assign rt_min = rt_words | plus: 110 | divided_by: 220 -%}
+{%- if rt_min < 1 -%}{%- assign rt_min = 1 -%}{%- endif -%}
+{{ rt_min }} min read
