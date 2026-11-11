@@ -390,3 +390,8 @@ footer.foot{border-top:1px solid var(--line); padding:38px 0; margin-top:30px; b
 .collab{margin:18px 0 0; font-size:14.5px; color:var(--ink-soft); display:flex; align-items:center; gap:9px; flex-wrap:wrap}
 .collab a{color:var(--navy); font-weight:600; text-decoration:none; border-bottom:1px solid currentColor}
 .collab .dot{width:8px; height:8px; border-radius:50%; background:#3F8F5A; box-shadow:0 0 0 3px rgba(63,143,90,.18); flex:none}
+
+/* 6-node product timeline */
+.timeline.n6{grid-template-columns:repeat(6,1fr)}
+.timeline.n6 .axis{grid-template-columns:repeat(6,1fr)}
+@media(max-width:820px){ .timeline.n6{display:block; grid-template-columns:none; grid-template-rows:none; padding-left:26px; margin-top:8px} }
