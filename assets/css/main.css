@@ -412,3 +412,5 @@ footer.foot{border-top:1px solid var(--line); padding:38px 0; margin-top:30px; b
   .timeline.lanes .lane-lbl{display:none}
   .timeline.lanes .tcard.prod{border-top-width:3px}
 }
+.timeline.lanes .prod-row{grid-row:3; grid-column:2/-1; display:grid; grid-template-columns:repeat(3,1fr); gap:16px; align-items:stretch}
+@media(max-width:820px){ .timeline.lanes .prod-row{display:block} }
