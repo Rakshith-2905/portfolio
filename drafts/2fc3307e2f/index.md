@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Why Every Chatbot Picks 7"
+title: "A World of 7s"
 date: 2026-11-10
 kind: Opinion
 permalink: /drafts/2fc3307e2f/
@@ -18,14 +18,16 @@ It said 7, didn't it?
 
 It is not your chatbot. When the AI advertising consultancy Springboards asked the biggest models a hundred times each, GPT said 7 on 92 occasions, Claude on 90 and Gemini every single time (as reported by [Ian Leslie](https://www.ian-leslie.com/p/why-are-llms-fixated-on-the-number)). In a controlled study of six models across seven languages and 75,600 queries, [Javier Coronado-Blázquez](https://arxiv.org/abs/2502.19965) found that "7 is the preferred value by far for every single model." Chance would give you 7 one time in ten.
 
-Here is the twist: **people pick 7 too.** In a classic 1976 study, psychologists [Michael Kubovy and Joseph Psotka](https://psycnet.apa.org/record/1977-00345-001) asked 558 people for a random digit, and 28% chose 7. The chatbot did not invent our bias. It learned it from our writing and then amplified it. Raise the human preference to roughly the third power and you get the chatbot numbers almost exactly. **Chatbots pick the way people do, cubed.**
+**People pick 7 too.** In a classic 1976 study, psychologists [Michael Kubovy and Joseph Psotka](https://psycnet.apa.org/record/1977-00345-001) asked 558 people for a random digit, and 28% chose 7. The chatbot did not invent our bias. It learned it from our writing and then amplified it. Raise the human preference to roughly the third power and you get the chatbot numbers almost exactly. **Chatbots pick the way people do, cubed.**
 
 <figure>
   <img src="{{ '/assets/img/posts/oped/oped-seven.png' | relative_url }}" alt="Left: share of answers that are 7 as human preference is amplified, with people at 28% and chatbots at 80 to 92%. Right: the five most repeated jokes out of 1,008 requests.">
   <figcaption>People sit at 28%; chatbots correspond to amplifying that preference by a power of about 3 to 4. Right: asked for a joke 1,008 times, ChatGPT returned the same scarecrow joke 140 times.</figcaption>
 </figure>
 
-That is harmless for a number. It is not harmless when the request is a cover letter, a product spec or an argument about social media, and the same pull applies.
+With a number, it does not matter. With a cover letter, a product spec or an argument about social media, the same pull applies.
+
+<p class="draft-anecdote">[Your line here, in your own words: a sentence or two from your own experience, for example writing in English as a second language, and what it means that Indian writers using AI drifted toward Western styles.]</p>
 
 The fixes are simple, so here they are first. The evidence and the mechanics follow for anyone who wants them.
 
@@ -48,8 +50,8 @@ And once in a while, write something with no help at all.
 ## The evidence
 
 <figure>
-  <img src="{{ '/assets/img/posts/oped/oped-evidence.png' | relative_url }}" alt="Three panels: bar chart of how much more alike writing became in three controlled studies; two small bar charts showing LLMs find about 2 distinct algorithms per problem versus about 3 for people, and AI-agent code is 2.3 times more verbose than human code; bar chart of the estimated share of scientific abstracts that are LLM-modified">
-  <figcaption>Top: how much more alike people's writing became with an LLM in controlled studies (the metrics differ, so compare direction, not length). Middle: code written by models finds fewer distinct algorithms and runs longer than human code. Bottom: estimated share of published scientific writing that is already substantially LLM-modified.</figcaption>
+  <img src="{{ '/assets/img/posts/oped/oped-evidence.png' | relative_url }}" alt="Two bar charts: people find about 3 distinct ways to solve an introductory coding problem where LLMs find about 2; Indian and US essays become more alike with a GPT-4o autocomplete, cosine similarity rising from 0.48 to 0.54">
+  <figcaption>Two examples of the pull toward the middle, one in code and one in writing.</figcaption>
 </figure>
 
 - **Writing gets better, and more alike.** AI ideas made stories about 8% more novel but measurably more similar to each other (Doshi and Hauser, 293 writers). With a GPT-4o autocomplete, Indian writers drifted toward Western styles (Agarwal et al.).
@@ -58,7 +60,7 @@ And once in a while, write something with no help at all.
 - **We trust it more than we check it.** Developers with an AI assistant wrote less secure code but were more likely to believe it was secure (Perry et al.). The mistakes are real: lawyers fined for citing cases ChatGPT invented, and Air Canada held liable for a refund policy its chatbot made up.
 - **It is already everywhere.** Up to 17.5% of sentences in computer-science abstracts were substantially LLM-modified by early 2024 (Liang et al.), and "delves" became 28 times more common in PubMed than its trend predicts (Kobak et al.).
 
-The effects are small to medium and mostly from short lab studies. The worry is how they compound across billions of uses.
+The effects are small to medium and mostly from short lab studies. The worry is what happens when they repeat across billions of uses.
 
 ## Why it happens
 
@@ -66,7 +68,7 @@ The effects are small to medium and mostly from short lab studies. The worry is 
 
 **Tuning rewards the familiar.** After this first training, assistants are fine-tuned on human ratings: people compare two answers, pick the better one, and the model learns to produce what they prefer. Raters, like all of us, tend to prefer text that feels typical: clear, balanced, safe. Mathematically, this works like turning the temperature knob down permanently, inside the model itself. Kirk et al. measured it: this kind of tuning substantially reduces output diversity. That is why, in Padmakumar and He's essay study, writing with the raw base model did not narrow people's ideas, while writing with the tuned assistant cut unique key points by about 7%.
 
-**The loop closes.** A growing share of what gets published is model-assisted, and the next generation of models trains on it. Each round, the rare cases disappear first, like photocopying a photocopy, where the fine detail goes before anything else. Shumailov et al. showed this in *Nature*: models trained on their own output steadily lose the tails of the original distribution. The fix is known too. Collapse is avoided when fresh human writing keeps being added alongside synthetic text rather than replaced by it (Gerstgrasser et al.).
+**The loop closes.** A growing share of what gets published is model-assisted, and the next generation of models trains on it. Each round, the rare cases disappear first. Shumailov et al. showed this in *Nature*: models trained on their own output steadily lose the tails of the original distribution. Collapse is avoided when fresh human writing keeps being added alongside synthetic text rather than replaced by it (Gerstgrasser et al.).
 
 Emails converge first because they are the most delegated. Arguments follow, because we take the model's framing along with its sentences. Ideas come last.
 
@@ -126,7 +128,7 @@ Writing is losing its friction now. The struggle over a sentence was never just 
 
 ## Keep the gargoyles
 
-This is not an argument against LLMs. I use them every day, and I build AI tutors for a living. English is not my first language, and they help me say what I mean with a fluency I did not always have, including in this article. The standard drainpipe has real virtues too. The failure was letting the default become the only option.
+I use these tools every day, and I build AI tutors for a living. English is not my first language, and they help me say what I mean with a fluency I did not always have, including in this article. The standard drainpipe has real virtues too. The failure was letting the default become the only option.
 
 For those of us who build these tools, that is the job: build them to work with people, not instead of them. Start from the user's words, measure how alike outputs become, and reward the thinking over the polish.
 
