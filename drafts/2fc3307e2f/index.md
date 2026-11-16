@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "AI Does the Hard Part. That's the Problem."
-subtitle: "Every chatbot picks 7. The bigger cost is the struggle we skip."
 date: 2026-11-10
 kind: Opinion
 permalink: /drafts/2fc3307e2f/
@@ -13,7 +12,9 @@ excerpt: "Every chatbot picks 7. The bigger cost is the struggle we skip: the sl
 
 <div class="draft-banner">Draft, not yet published. Please don't share.</div>
 
-Ask a chatbot for a random number between 1 and 10 and it will probably say 7. You may have seen that trick already. What interests me is where the 7 comes from.
+Before you read on, open a chatbot and ask it to pick a random number between 1 and 10.
+
+It probably said 7. You may have seen that trick already. What interests me is where the 7 comes from.
 
 People do it too. In 1976, psychologists [Michael Kubovy and Joseph Psotka](https://psycnet.apa.org/record/1977-00345-001) asked 558 people for a random digit, and 28% said 7. Chatbots go much further. When the AI advertising consultancy Springboards asked the big models a hundred times each, GPT said 7 on 92 occasions, Claude on 90 and Gemini every time ([as reported by Ian Leslie](https://www.ian-leslie.com/p/why-are-llms-fixated-on-the-number)). Across six models, seven languages and 75,600 queries, [Javier Coronado-Blázquez](https://arxiv.org/abs/2502.19965) found that "7 is the preferred value by far for every single model." Chance would give 7 one time in ten.
 
@@ -64,11 +65,11 @@ Most of these effects are small to medium and come from short lab studies. They 
 
 ## Why it happens
 
-Models are built to predict the likely. A language model learns from billions of sentences how likely each possible next word is. When it writes, it does not sample evenly from that whole range. A setting called temperature controls how hard it leans toward the likeliest options. Below 1, it effectively raises every probability to a power, so the popular choice gets more popular and the rare one nearly vanishes. Think of a jukebox that plays songs in proportion to their popularity, with a knob that makes the hits play even more often. That knob is the cubing behind the 7.
+Models are built to predict the likely. A language model learns from billions of sentences how likely each next word is. A setting called temperature then controls how hard it leans toward the likeliest options. Below 1, it effectively raises every probability to a power, so the popular choice gets more popular and the rare one nearly vanishes. That is the cubing behind the 7.
 
-Tuning then rewards the familiar. After this first training, assistants are fine-tuned on human ratings: people compare two answers, pick the better one, and the model learns to produce what they prefer. Raters, like all of us, tend to prefer text that feels typical: clear, balanced, safe. Mathematically, this works like turning the temperature knob down permanently, inside the model itself. Kirk et al. measured it: this kind of tuning substantially reduces output diversity. That is why, in Padmakumar and He's essay study, writing with the raw base model did not narrow people's ideas, while writing with the tuned assistant cut unique key points by about 7%.
+Tuning then rewards the familiar. Assistants are fine-tuned on human ratings, and raters tend to prefer text that feels typical: clear, balanced, safe. That works like turning the temperature down permanently, and it measurably reduces output diversity (Kirk et al.). In Padmakumar and He's essay study, the raw base model did not narrow people's ideas, while the tuned assistant cut unique key points by about 7%.
 
-And the loop closes. A growing share of what gets published is model-assisted, and the next generation of models trains on it. Each round, the rare cases are the first to go. Shumailov et al. showed this in *Nature*: models trained on their own output steadily lose the tails of the original distribution. Collapse is avoided when fresh human writing keeps being added alongside synthetic text rather than replaced by it (Gerstgrasser et al.).
+And the loop closes. More of what gets published is model-assisted, and the next models train on it. Each round, the rare cases go first (Shumailov et al., *Nature*). What prevents collapse is fresh human writing added alongside the synthetic text (Gerstgrasser et al.).
 
 Emails converge first because they are the most delegated. Arguments follow, because we take the model's framing along with its sentences. Ideas come last.
 
