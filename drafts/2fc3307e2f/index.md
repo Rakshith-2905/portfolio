@@ -29,6 +29,26 @@ That is harmless for a number. It is not harmless when the request is a cover le
 
 My PhD was about failure: how vision models break when real-world data drifts away from what they were trained on. The failures always lived in the tail, in the rare cases the data barely covered. I came to love the tail, because that is where you learn what a system really understands. Now I see the same thing running in reverse. This time it is not the model losing the tail. It is us.
 
+## We have seen this before
+
+Look at how buildings used to get rid of rainwater. In Gothic Europe it poured from the mouths of carved gargoyles; the word comes from the old French for throat. In Japan, rain chains called kusari-doi guide it down in a ringing line of cups. On the terraces of Beijing's Forbidden City, it drains through rows of carved dragon heads. Every culture solved the same problem its own way, and the solution told you where you were.
+
+<figure class="drain-grid">
+  <div class="drain-cells">
+    <div><img src="{{ '/assets/img/posts/oped/drain-gargoyle.jpg' | relative_url }}" alt="Stone gargoyle waterspout projecting from Notre-Dame de Paris"><span>Gargoyle, Notre-Dame de Paris</span></div>
+    <div><img src="{{ '/assets/img/posts/oped/drain-rainchain.jpg' | relative_url }}" alt="Metal rain chain of linked cups hanging from a temple roof in Yanaka, Tokyo"><span>Rain chain, Japan</span></div>
+    <div><img src="{{ '/assets/img/posts/oped/drain-dragon.jpg' | relative_url }}" alt="Row of carved marble dragon-head spouts on the terrace of the Hall of Supreme Harmony"><span>Dragon-head spouts, Forbidden City</span></div>
+    <div><img src="{{ '/assets/img/posts/oped/drain-modern.jpg' | relative_url }}" alt="Plain dark downpipe running down a stone wall into a ground drain"><span>Today, almost everywhere</span></div>
+  </div>
+  <figcaption>Four ways to move rainwater.
+    <small class="drain-credits">Photos: <a href="https://commons.wikimedia.org/wiki/File:Cath%C3%A9drale_Notre-Dame_(g%C3%A1rgolas).004_-_Paris.jpg">Fernando Losada Rodríguez</a> / CC BY-SA 4.0; <a href="https://commons.wikimedia.org/wiki/File:At_a_Yanaka_Temple,_Tokyo_JP.jpg">Stefano Vigorelli</a> / CC BY-SA 4.0; <a href="https://commons.wikimedia.org/wiki/File:Chishou_gargoyles_of_Hall_of_Supreme_Harmony.jpg">そらみみ</a> / CC BY-SA 4.0; <a href="https://commons.wikimedia.org/wiki/File:Downspout_and_drain_-_geograph.org.uk_-_6741959.jpg">Adrian Taylor</a> / CC BY-SA 2.0. All via Wikimedia Commons.</small>
+  </figcaption>
+</figure>
+
+Today it is a grey plastic or aluminium tube, the same in almost every city on earth. Nobody banned the gargoyle. The standard pipe was simply cheaper, faster and good enough, and thousands of reasonable choices added up to sameness.
+
+LLMs are the standard pipe for language. They are cheap, fast and good enough, which is exactly why they will win by default unless we choose otherwise.
+
 The fixes are simple, so here they are first. The evidence and the mechanics follow for anyone who wants them.
 
 ## What to do: hold the reins
@@ -76,11 +96,13 @@ Emails converge first because they are the most delegated. Arguments follow, bec
 
 ## Pick 4
 
-This is not an argument against LLMs. I use them every day, and I build AI tutors for a living. The weakest writers gain the most from them, and that matters. Modernist architecture had real virtues too. The failure was letting the default become the only option, until every new downtown was the same glass towers.
+This is not an argument against LLMs. I use them every day, and I build AI tutors for a living. The weakest writers gain the most from them, and that matters. The standard drainpipe has real virtues too. The failure was letting the default become the only option.
 
 Seven is not a bad answer. It is the most human answer, made more human than any human. A world of 7s is not wrong in any single case. It is just a world where nobody picks 4 and the scarecrow joke is the only joke. Progress lives in the tail: the improbable sentence, the minority view, the person who framed the problem differently. Used carelessly, these tools remove that tail first. Used deliberately, they give everyone the fluency to build something of their own. Pick 4 sometimes.
 
 ---
+
+*A note on how this was written: the idea, the argument and the final calls are mine. I used an AI assistant to help draft, research and check sources, and pushed back on it until the piece said what I meant. That is the point. These tools are remarkable when you hold the reins.*
 
 *Rakshith Subramanyam is a technical founder and AI researcher who builds AI tutoring products.*
 
