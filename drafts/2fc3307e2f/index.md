@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "AI Does the Hard Part. That's the Problem."
+subtitle: "Before you read on, ask any chatbot to pick a number between 1 and 10."
 date: 2026-11-10
 kind: Opinion
 permalink: /drafts/2fc3307e2f/
@@ -11,8 +12,6 @@ excerpt: "Every chatbot picks 7. The bigger cost is the struggle we skip: the sl
 ---
 
 <div class="draft-banner">Draft, not yet published. Please don't share.</div>
-
-Before you read on, open a chatbot and ask it to pick a random number between 1 and 10.
 
 It probably said 7. You may have seen that trick already. What interests me is where the 7 comes from.
 
@@ -65,11 +64,11 @@ Most of these effects are small to medium and come from short lab studies. They 
 
 ## Why it happens
 
-Models are built to predict the likely. A language model learns from billions of sentences how likely each next word is. A setting called temperature then controls how hard it leans toward the likeliest options. Below 1, it effectively raises every probability to a power, so the popular choice gets more popular and the rare one nearly vanishes. That is the cubing behind the 7.
+Models are built to predict the likely. A language model learns from billions of sentences how likely each next word is. A setting called temperature then decides how hard it leans toward the likeliest options. Below 1, it effectively raises every probability to a power, so popular choices get more popular and rare ones nearly vanish. That is the cubing behind the 7.
 
-Tuning then rewards the familiar. Assistants are fine-tuned on human ratings, and raters tend to prefer text that feels typical: clear, balanced, safe. That works like turning the temperature down permanently, and it measurably reduces output diversity (Kirk et al.). In Padmakumar and He's essay study, the raw base model did not narrow people's ideas, while the tuned assistant cut unique key points by about 7%.
+Tuning rewards the familiar. Assistants are then fine-tuned on human ratings, and raters, like all of us, prefer text that feels typical: clear, balanced, safe. That works like turning the temperature down permanently, inside the model (Kirk et al.). In Padmakumar and He's essay study, the raw base model did not narrow people's ideas, while the tuned assistant cut unique key points by about 7%.
 
-And the loop closes. More of what gets published is model-assisted, and the next models train on it. Each round, the rare cases go first (Shumailov et al., *Nature*). What prevents collapse is fresh human writing added alongside the synthetic text (Gerstgrasser et al.).
+And the loop closes. More and more published text is model-assisted, and the next models train on it. Each round, the rare cases go first (Shumailov et al., *Nature*). Keeping fresh human writing in the mix prevents the collapse (Gerstgrasser et al.).
 
 Emails converge first because they are the most delegated. Arguments follow, because we take the model's framing along with its sentences. Ideas come last.
 
