@@ -35,15 +35,11 @@ A model will always offer you the 7: the most likely answer, beautifully phrased
 
 1. **Hand off the chores, not the judgment.** Know which one you are asking for.
 2. **Decide what good looks like before you start.** Otherwise twenty polished options pick for you.
-3. **Draft before you ask.** Even three rough bullets. Let the model edit your thinking, not replace it.
+3. **Draft before you ask.** Let the model edit your thinking, not replace it.
 4. **Make it argue with you.** Ask what is wrong with your view, not to write it for you.
 5. **Read it aloud.** If it doesn't sound like you, it isn't done.
 
 And once in a while, write something with no help at all.
-
-**If you build these tools, build them to work with people, not instead of them.**
-
-Start from the user's words, measure how alike your outputs become, and reward the thinking over the polish.
 
 ## The evidence
 
@@ -124,9 +120,11 @@ Today it is a plain pipe, the same almost everywhere. Nobody banned the gargoyle
 
 Writing is losing its friction now. The struggle over a sentence was never just a cost. It was where the voice came from.
 
-## Why pick 7 when you can pick 4?
+## Keep the gargoyles
 
 This is not an argument against LLMs. I use them every day, and I build AI tutors for a living. English is not my first language, and they help me say what I mean with a fluency I did not always have. The standard drainpipe has real virtues too. The failure was letting the default become the only option.
+
+For those of us who build these tools, that is the job: build them to work with people, not instead of them. Start from the user's words, measure how alike outputs become, and reward the thinking over the polish.
 
 Seven is not a bad answer. It is everyone's answer, made more so. A world of 7s is not wrong in any single case. It is just a world where nobody picks 4, and the scarecrow joke is the only joke. Progress has always come from the less likely choice: the improbable sentence, the minority view, the person who framed the problem differently. Used carelessly, these tools hand us more 7s. Used deliberately, they give everyone the fluency to say something only they would say.
 
