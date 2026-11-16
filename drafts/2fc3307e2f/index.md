@@ -53,7 +53,7 @@ And once in a while, write something with no help at all.
 - **A direction.** With a GPT-4o autocomplete, Indian writers' essays drifted toward Western styles (Agarwal et al.).
 - **Opinions too.** People writing with a quietly biased assistant were about twice as likely to argue its side, and their own views shifted (Jakesch et al., 1,506 people).
 - **Already widespread.** Up to 17.5% of sentences in computer-science abstracts were substantially LLM-modified by early 2024 (Liang et al.). In PubMed, "delves" became 28 times more common than its trend predicts (Kobak et al.).
-- **Code too, with a caveat.** Asked to solve the same programming problems, models found fewer distinct algorithms than human programmers: on introductory problems, about two where people found three (EMNLP Findings 2025). GitClear's 2026 analysis of 623 million code changes reports duplicated code blocks up 81% since 2023 and refactoring moves down 70%, though that is an industry report. Real projects may be holding up better: an October 2026 study of 50 long-lived open-source projects found no consistent rise in code similarity so far (Marchezan et al.).
+- **Code too, with a caveat.** Asked to solve the same programming problems, models found fewer distinct algorithms than human programmers: on introductory problems, about two where people found three (EMNLP Findings 2025). GitClear's 2026 analysis of 623 million code changes reports duplicated code blocks up 81% since 2023 and refactoring moves down 70%, though that is an industry report. An ICLR 2026 study found assistants succeed far more often in mainstream languages and frameworks than niche ones, a rich-get-richer loop that nudges new projects toward what is already popular (Gu et al.). Real projects may be holding up better: an October 2026 study of 50 long-lived open-source projects found no consistent rise in code similarity so far (Marchezan et al.).
 
 The effects are small to medium and mostly from short lab studies. The worry is how they compound across billions of uses.
 
@@ -123,7 +123,7 @@ Writing is losing its friction now. The struggle over a sentence was never just 
 
 ## Keep the gargoyles
 
-This is not an argument against LLMs. I use them every day, and I build AI tutors for a living. English is not my first language, and they help me say what I mean with a fluency I did not always have. The standard drainpipe has real virtues too. The failure was letting the default become the only option.
+This is not an argument against LLMs. I use them every day, and I build AI tutors for a living. English is not my first language, and they help me say what I mean with a fluency I did not always have, including in this article. The standard drainpipe has real virtues too. The failure was letting the default become the only option.
 
 For those of us who build these tools, that is the job: build them to work with people, not instead of them. Start from the user's words, measure how alike outputs become, and reward the thinking over the polish.
 
@@ -132,8 +132,6 @@ Seven is not a bad answer. It is everyone's answer, made more so. A world of 7s 
 So the next time a model hands you a 7, ask yourself what your 4 is.
 
 ---
-
-*A note on how this was written: I wrote the first draft, and the idea, the argument and the final calls are mine. I then used an AI assistant to tighten the prose, research and check sources, and pushed back on it until the piece said what I meant. That is the point. These tools are remarkable when you do the thinking.*
 
 *Rakshith Subramanyam is a technical founder and AI researcher who builds AI tutoring products.*
 
@@ -146,6 +144,7 @@ So the next time a model hands you a 7, ask yourself what your 4 is.
 - Van Koevering, K., and Kleinberg, J. (2024). How Random is Random? Evaluating the Randomness and Humaneness of LLMs' Coin Flips. <https://arxiv.org/abs/2406.00092>
 - Agarwal, D., Naaman, M., and Vashistha, A. (2025). AI Suggestions Homogenize Writing Toward Western Styles and Diminish Cultural Nuances. *CHI 2025*. <https://arxiv.org/abs/2409.11360>
 - Doshi, A. R., and Hauser, O. P. (2024). Generative AI enhances individual creativity but reduces the collective diversity of novel content. *Science Advances*. <https://doi.org/10.1126/sciadv.adn5290>
+- Gu, F., et al. (2026). The Matthew Effect of AI Programming Assistants: A Hidden Bias in Software Evolution. *ICLR 2026*. <https://arxiv.org/abs/2509.23261>
 - GitClear (2026). The Maintainability Gap: 2026 AI Code Quality Research (industry report). <https://www.gitclear.com/the_ai_code_quality_maintainability_gap>
 - How Diversely Can Language Models Solve Problems? Exploring the Algorithmic Diversity of Model-Generated Code. *Findings of EMNLP 2025*. <https://arxiv.org/abs/2503.00691>
 - Marchezan, L., et al. (2026). Does AI-Assisted Development Homogenize Software? An Empirical Study of Code Similarity, Quality, and Evolution. <https://arxiv.org/abs/2610.24093>
