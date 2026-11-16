@@ -33,11 +33,11 @@ The fixes are simple, so here they are first. The evidence and the mechanics fol
 
 A model will always offer you the 7: the most likely answer, beautifully phrased. For a lot of things, that is fine. For anything that matters, know your 4 before you ask.
 
-- **Think before you prompt.** Write your rough take first, even three bullet points. The model should edit your thinking, not replace it.
-- **Hand off the chores, not the judgment.** Formatting, summaries, boilerplate: delegate freely. The idea, the argument, the decision: keep.
-- **Decide what good looks like before you see options.** Otherwise twenty polished choices pick for you, and you end up with something you never wanted.
-- **Make it argue with you.** Ask what is wrong with your view, not to write your view for you.
-- **If it doesn't sound like you, it isn't done.** Read it aloud before you send it.
+1. **Hand off the chores, not the judgment.** Know which one you are asking for.
+2. **Decide what good looks like.** Do it before you see options, or twenty polished choices will pick for you.
+3. **Draft before you ask.** Even three rough bullets. Let the model edit your thinking, not replace it.
+4. **Make it argue with you.** Ask what is wrong with your view, not to write it for you.
+5. **Read it aloud.** If it doesn't sound like you, it isn't done.
 
 And once in a while, write something with no help at all.
 
