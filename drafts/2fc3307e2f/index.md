@@ -102,7 +102,7 @@ Seven is not a bad answer. It is the most human answer, made more human than any
 
 ---
 
-*A note on how this was written: the idea, the argument and the final calls are mine. I used an AI assistant to help draft, research and check sources, and pushed back on it until the piece said what I meant. That is the point. These tools are remarkable when you hold the reins.*
+*A note on how this was written: I wrote the first draft, and the idea, the argument and the final calls are mine. I then used an AI assistant to tighten the prose, research and check sources, and pushed back on it until the piece said what I meant. That is the point. These tools are remarkable when you do the thinking and hold the reins.*
 
 *Rakshith Subramanyam is a technical founder and AI researcher who builds AI tutoring products.*
 
