@@ -105,18 +105,18 @@ which is a permanent temperature below 1, even when you sample at \\(T = 1\\).
 
 ## From gargoyles to grey pipes
 
-We have watched this happen before, slowly, in buildings. Rainwater once left Gothic cathedrals through the mouths of carved gargoyles. On Indian temples, water runs off through stone spouts carved as the makara, a mythical sea creature. In Beijing's Forbidden City it pours through rows of carved dragon heads. On the adobe buildings of the American Southwest, wooden canales throw it clear of the walls. Every culture solved the same problem its own way, and the solution told you where you were.
+We have watched this happen before, slowly, in buildings. Rainwater once left Gothic cathedrals through the mouths of carved gargoyles. On Indian temples, water runs off through stone spouts carved as the makara, a mythical sea creature. In Beijing's Forbidden City it pours through rows of carved dragon heads. In Japan it runs down rain chains, kusari-doi, from cup to cup instead of through a pipe. Every culture solved the same problem its own way, and the solution told you where you were.
 
 <figure class="drain-grid">
   <div class="drain-cells">
     <div><img src="{{ '/assets/img/posts/oped/drain-gargoyle.jpg' | relative_url }}" alt="Stone gargoyle waterspout projecting from Notre-Dame de Paris"><span>Gargoyle, Notre-Dame de Paris</span></div>
     <div><img src="{{ '/assets/img/posts/oped/drain-makara.jpg' | relative_url }}" alt="Curved stone water spout carved as a makara at the Hazara Rama Temple, Hampi"><span>Makara spout, Hazara Rama Temple, Hampi, India</span></div>
     <div><img src="{{ '/assets/img/posts/oped/drain-dragon.jpg' | relative_url }}" alt="Row of carved marble dragon-head spouts on the terrace of the Hall of Supreme Harmony"><span>Dragon-head spouts, Forbidden City</span></div>
-    <div><img src="{{ '/assets/img/posts/oped/drain-canale.jpg' | relative_url }}" alt="Wooden canales projecting from the adobe walls of San José de Gracia Church, Las Trampas"><span>Canales, Las Trampas, New Mexico</span></div>
+    <div><img src="{{ '/assets/img/posts/oped/drain-rainchain.jpg' | relative_url }}" alt="Chain of metal cups hanging from the roof eave of a temple building into an autumn garden at Hogon-in, Kyoto"><span>Rain chain, Hōgon-in, Kyoto</span></div>
     <div class="drain-today"><img src="{{ '/assets/img/posts/oped/drain-modern.jpg' | relative_url }}" alt="Plain dark downpipe running down a stone wall into a ground drain"><span>Today, almost everywhere</span></div>
   </div>
   <figcaption>Five ways to move rainwater, and the one that won.
-    <small class="drain-credits">Photos: <a href="https://commons.wikimedia.org/wiki/File:Cath%C3%A9drale_Notre-Dame_(g%C3%A1rgolas).004_-_Paris.jpg">Fernando Losada Rodríguez</a> / CC BY-SA 4.0; <a href="https://commons.wikimedia.org/wiki/File:Water_outlet.jpg">Soham Banerjee</a> / CC BY 2.0; <a href="https://commons.wikimedia.org/wiki/File:Chishou_gargoyles_of_Hall_of_Supreme_Harmony.jpg">そらみみ</a> / CC BY-SA 4.0; <a href="https://commons.wikimedia.org/wiki/File:Catholic_Church_at_Las_Trampas_(north_view).JPG">Tworiverflyfisher</a> / CC BY-SA 3.0; <a href="https://commons.wikimedia.org/wiki/File:Downspout_and_drain_-_geograph.org.uk_-_6741959.jpg">Adrian Taylor</a> / CC BY-SA 2.0. All via Wikimedia Commons; makara photo cropped.</small>
+    <small class="drain-credits">Photos: <a href="https://commons.wikimedia.org/wiki/File:Cath%C3%A9drale_Notre-Dame_(g%C3%A1rgolas).004_-_Paris.jpg">Fernando Losada Rodríguez</a> / CC BY-SA 4.0; <a href="https://commons.wikimedia.org/wiki/File:Water_outlet.jpg">Soham Banerjee</a> / CC BY 2.0; <a href="https://commons.wikimedia.org/wiki/File:Chishou_gargoyles_of_Hall_of_Supreme_Harmony.jpg">そらみみ</a> / CC BY-SA 4.0; <a href="https://commons.wikimedia.org/wiki/File:%E6%9C%B1%E3%81%AB%E6%9F%93%E3%81%BE%E3%81%A3%E3%81%9F%E5%AE%9D%E5%8E%B3%E9%99%A2%E3%81%AE%E5%BA%AD%E5%9C%92_Pcs34560_IMG2312.jpg">pcs34560</a> / public domain; <a href="https://commons.wikimedia.org/wiki/File:Downspout_and_drain_-_geograph.org.uk_-_6741959.jpg">Adrian Taylor</a> / CC BY-SA 2.0. All via Wikimedia Commons; makara and rain chain photos cropped.</small>
   </figcaption>
 </figure>
 
