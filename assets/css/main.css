@@ -431,3 +431,5 @@ footer.foot{border-top:1px solid var(--line); padding:38px 0; margin-top:30px; b
 @media(max-width:560px){ .post-body .drain-cells{grid-template-columns:1fr} .post-body .drain-cells .drain-today{grid-column:auto} .post-body .drain-cells .drain-today img{aspect-ratio:4/3} .post-body .drain-cells div:nth-child(4) img{flex:none; height:auto; aspect-ratio:4/3} }
 .post-body .math-box{border:1px solid #E1DDD2; border-radius:10px; padding:.8em 1.1em; margin:1.6em 0; background:#FBFAF6}
 .post-body .math-box summary{font-weight:700; cursor:pointer}
+
+.post-wrap .p-dek{font-size:1.2rem; line-height:1.45; color:var(--muted); margin:-6px 0 22px; font-style:italic}

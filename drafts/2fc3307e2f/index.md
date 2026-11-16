@@ -1,13 +1,14 @@
 ---
 layout: post
-title: "Why Every Chatbot Picks 7"
+title: "AI Does the Hard Part. That's the Problem."
+subtitle: "Every chatbot picks 7. The bigger cost is the struggle we skip."
 date: 2026-11-10
 kind: Opinion
 permalink: /drafts/2fc3307e2f/
 sitemap: false
 robots: noindex
 unlisted: true
-excerpt: "Chatbots pick 7 the way people do, cubed. The same pull is flattening how we write, code and argue, and it takes a few habits to push back."
+excerpt: "Every chatbot picks 7. The bigger cost is the struggle we skip: the slow, hard part of writing, coding and learning is where we do our thinking, and AI is very good at doing it for us."
 ---
 
 <div class="draft-banner">Draft, not yet published. Please don't share.</div>
@@ -25,11 +26,13 @@ Take the human preference, raise it to roughly the third power, and you land on 
 
 For a number, who cares. But a cover letter, a product spec or an argument about social media goes through the same machinery. I feel that pull myself. English is not my first language, and a model can make my sentences fluent in seconds. It can also make them sound like everyone else's.
 
+But sameness is only the visible symptom. The bigger cost is what we skip to get there. The slow, hard part of writing, coding or learning is where we do our thinking, and AI is very good at doing that part for us.
+
 The advice comes first. The evidence and the mechanics are further down for anyone who wants them.
 
 ## What to do: find your 4
 
-A model will always offer you the 7: the likeliest answer, nicely phrased. For anything that matters, find your 4 first.
+A model will always offer you the 7: the likeliest answer, nicely phrased, with the hard part already done. For anything that matters, find your 4 first.
 
 1. **Hand off the chores, not the judgment.** Know which one you are asking for.
 2. **Decide what good looks like before you start.** Otherwise twenty polished options pick for you.
@@ -50,6 +53,7 @@ And once in a while, write something with no help at all.
   <figcaption>Three findings, one each for writing, code and how far this has already spread. Sources below.</figcaption>
 </figure>
 
+- It can do the learning for you. About 1,000 high-school students in Turkey practised math with GPT-4. With a plain chat interface they did 48% better in practice, but 17% worse on the exam once it was taken away. A tutor version with safeguards built in avoided most of that drop (Bastani et al., PNAS 2025).
 - Writing gets better, and more alike. AI ideas made stories about 8% more novel but measurably more similar to each other (Doshi and Hauser, 293 writers). With a GPT-4o autocomplete, Indian writers drifted toward Western styles (Agarwal et al.).
 - Opinions move too. People writing with a quietly biased assistant were about twice as likely to argue its side, and their own views shifted afterwards (Jakesch et al., 1,506 people).
 - Code converges and bloats. Models find fewer distinct algorithms than people do, about two where people find three (EMNLP Findings 2025), and agent-written code is 2.3 times more verbose than code in human projects (SlopCodeBench, 2026). Real repositories show no consistent rise in similarity yet (Marchezan et al., 2026).
@@ -130,7 +134,7 @@ For those of us who build these tools, the job is to make them work with people,
 
 Seven is a fine answer. The trouble is that it is everyone's answer, turned up. In a world of 7s no single answer is wrong, but nobody picks 4, and the scarecrow joke is the only joke. Most progress has come from the less likely choice: an odd sentence, a minority view, someone framing the problem differently. Used carelessly, these tools hand us more 7s. Used deliberately, they give everyone the fluency to say something only they would say.
 
-So the next time a model hands you a 7, ask what your 4 is.
+So the next time a model offers to do the hard part, keep some of it for yourself. Ask what your 4 is.
 
 ---
 
@@ -142,6 +146,7 @@ So the next time a model hands you a 7, ask what your 4 is.
 - Leslie, I. (2025). Why are LLMs fixated on the number 7? <https://www.ian-leslie.com/p/why-are-llms-fixated-on-the-number>
 - Van Koevering, K., and Kleinberg, J. (2024). How Random is Random? Evaluating the Randomness and Humaneness of LLMs' Coin Flips. <https://arxiv.org/abs/2406.00092>
 - Agarwal, D., Naaman, M., and Vashistha, A. (2025). AI Suggestions Homogenize Writing Toward Western Styles and Diminish Cultural Nuances. *CHI 2025*. <https://arxiv.org/abs/2409.11360>
+- Bastani, H., Bastani, O., Sungu, A., Ge, H., Kabakcı, Ö., & Mariman, R. (2025). Generative AI without guardrails can harm learning: Evidence from high school mathematics. *PNAS* 122(26). <https://doi.org/10.1073/pnas.2422633122>
 - Bjork, R. A. (1994). Memory and metamemory considerations in the training of human beings. In J. Metcalfe & A. P. Shimamura (Eds.), *Metacognition: Knowing about Knowing* (pp. 185–205). MIT Press.
 - Doshi, A. R., and Hauser, O. P. (2024). Generative AI enhances individual creativity but reduces the collective diversity of novel content. *Science Advances*. <https://doi.org/10.1126/sciadv.adn5290>
 - How Diversely Can Language Models Solve Problems? Exploring the Algorithmic Diversity of Model-Generated Code. *Findings of EMNLP 2025*. <https://arxiv.org/abs/2503.00691>
