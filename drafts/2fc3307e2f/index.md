@@ -29,9 +29,9 @@ That is harmless for a number. It is not harmless when the request is a cover le
 
 The fixes are simple, so here they are first. The evidence and the mechanics follow for anyone who wants them.
 
-## What to do: pick the destination yourself
+## What to do: bring your own 4
 
-Think of a model like GPS. It is brilliant at getting you somewhere, and it sends everyone down the same route. Choose where you are going yourself, and let it handle the turns.
+A model will always offer you the 7: the most likely sentence, the safest structure, the answer everyone else got. That is its job. Yours is to show up with a 4 of your own, and let the model help you make it better.
 
 - **Think before you prompt.** Write your rough take first, even three bullet points. The model should edit your thinking, not replace it.
 - **Hand off the chores, not the judgment.** Formatting, summaries, boilerplate: delegate freely. The idea, the argument, the decision: keep.
