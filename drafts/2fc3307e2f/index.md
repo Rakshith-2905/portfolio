@@ -43,8 +43,6 @@ And once in a while, write something with no help at all.
 
 **If you build these tools, build them to work with people, not instead of them.**
 
-> When I build tutors, the easy thing to ship is a system that answers the student's question well. Instead, I have it answer with a question first: what the student already thinks, where they got stuck, what they would try next. The student's reasoning stays the draft, and the model only edits it.
-
 Start from the user's words, measure how alike your outputs become, and reward the thinking over the polish.
 
 ## The evidence
@@ -107,17 +105,18 @@ which is a permanent temperature below 1, even when you sample at \\(T = 1\\).
 
 ## From gargoyles to grey pipes
 
-We have watched this happen before, slowly, in buildings. Rainwater once left Gothic cathedrals through the mouths of carved gargoyles. In Japan it ran down rain chains of ringing cups. In Beijing's Forbidden City it poured through rows of carved dragon heads. Every culture solved the same problem its own way, and the solution told you where you were.
+We have watched this happen before, slowly, in buildings. Rainwater once left Gothic cathedrals through the mouths of carved gargoyles. On Indian temples, water runs off through stone spouts carved as the makara, a mythical sea creature. In Beijing's Forbidden City it pours through rows of carved dragon heads. On the adobe buildings of the American Southwest, wooden canales throw it clear of the walls. Every culture solved the same problem its own way, and the solution told you where you were.
 
 <figure class="drain-grid">
   <div class="drain-cells">
     <div><img src="{{ '/assets/img/posts/oped/drain-gargoyle.jpg' | relative_url }}" alt="Stone gargoyle waterspout projecting from Notre-Dame de Paris"><span>Gargoyle, Notre-Dame de Paris</span></div>
-    <div><img src="{{ '/assets/img/posts/oped/drain-rainchain.jpg' | relative_url }}" alt="Metal rain chain of linked cups hanging from a temple roof in Yanaka, Tokyo"><span>Rain chain, Japan</span></div>
+    <div><img src="{{ '/assets/img/posts/oped/drain-makara.jpg' | relative_url }}" alt="Curved stone water spout carved as a makara at the Hazara Rama Temple, Hampi"><span>Makara spout, Hazara Rama Temple, Hampi, India</span></div>
     <div><img src="{{ '/assets/img/posts/oped/drain-dragon.jpg' | relative_url }}" alt="Row of carved marble dragon-head spouts on the terrace of the Hall of Supreme Harmony"><span>Dragon-head spouts, Forbidden City</span></div>
-    <div><img src="{{ '/assets/img/posts/oped/drain-modern.jpg' | relative_url }}" alt="Plain dark downpipe running down a stone wall into a ground drain"><span>Today, almost everywhere</span></div>
+    <div><img src="{{ '/assets/img/posts/oped/drain-canale.jpg' | relative_url }}" alt="Wooden canales projecting from the adobe walls of San José de Gracia Church, Las Trampas"><span>Canales, Las Trampas, New Mexico</span></div>
+    <div class="drain-today"><img src="{{ '/assets/img/posts/oped/drain-modern.jpg' | relative_url }}" alt="Plain dark downpipe running down a stone wall into a ground drain"><span>Today, almost everywhere</span></div>
   </div>
-  <figcaption>Four ways to move rainwater.
-    <small class="drain-credits">Photos: <a href="https://commons.wikimedia.org/wiki/File:Cath%C3%A9drale_Notre-Dame_(g%C3%A1rgolas).004_-_Paris.jpg">Fernando Losada Rodríguez</a> / CC BY-SA 4.0; <a href="https://commons.wikimedia.org/wiki/File:At_a_Yanaka_Temple,_Tokyo_JP.jpg">Stefano Vigorelli</a> / CC BY-SA 4.0; <a href="https://commons.wikimedia.org/wiki/File:Chishou_gargoyles_of_Hall_of_Supreme_Harmony.jpg">そらみみ</a> / CC BY-SA 4.0; <a href="https://commons.wikimedia.org/wiki/File:Downspout_and_drain_-_geograph.org.uk_-_6741959.jpg">Adrian Taylor</a> / CC BY-SA 2.0. All via Wikimedia Commons.</small>
+  <figcaption>Five ways to move rainwater, and the one that won.
+    <small class="drain-credits">Photos: <a href="https://commons.wikimedia.org/wiki/File:Cath%C3%A9drale_Notre-Dame_(g%C3%A1rgolas).004_-_Paris.jpg">Fernando Losada Rodríguez</a> / CC BY-SA 4.0; <a href="https://commons.wikimedia.org/wiki/File:Water_outlet.jpg">Soham Banerjee</a> / CC BY 2.0; <a href="https://commons.wikimedia.org/wiki/File:Chishou_gargoyles_of_Hall_of_Supreme_Harmony.jpg">そらみみ</a> / CC BY-SA 4.0; <a href="https://commons.wikimedia.org/wiki/File:Catholic_Church_at_Las_Trampas_(north_view).JPG">Tworiverflyfisher</a> / CC BY-SA 3.0; <a href="https://commons.wikimedia.org/wiki/File:Downspout_and_drain_-_geograph.org.uk_-_6741959.jpg">Adrian Taylor</a> / CC BY-SA 2.0. All via Wikimedia Commons; makara photo cropped.</small>
   </figcaption>
 </figure>
 
@@ -125,11 +124,13 @@ Today it is a plain pipe, the same almost everywhere. Nobody banned the gargoyle
 
 Writing is losing its friction now. The struggle over a sentence was never just a cost. It was where the voice came from.
 
-## Pick 4
+## Why pick 7 when you can pick 4?
 
-This is not an argument against LLMs. I use them every day, and I build AI tutors for a living. The weakest writers gain the most from them, and that matters. The standard drainpipe has real virtues too. The failure was letting the default become the only option.
+This is not an argument against LLMs. I use them every day, and I build AI tutors for a living. English is not my first language, and they help me say what I mean with a fluency I did not always have. The standard drainpipe has real virtues too. The failure was letting the default become the only option.
 
-Seven is not a bad answer. It is the most human answer, made more human than any human. A world of 7s is not wrong in any single case. It is just a world where nobody picks 4 and the scarecrow joke is the only joke. Progress lives in the tail: the improbable sentence, the minority view, the person who framed the problem differently. Used carelessly, these tools remove that tail first. Used deliberately, they give everyone the fluency to build something of their own. Pick 4 sometimes.
+Seven is not a bad answer. It is everyone's answer, made more so. A world of 7s is not wrong in any single case. It is just a world where nobody picks 4, and the scarecrow joke is the only joke. Progress has always come from the less likely choice: the improbable sentence, the minority view, the person who framed the problem differently. Used carelessly, these tools hand us more 7s. Used deliberately, they give everyone the fluency to say something only they would say.
+
+So the next time a model hands you a 7, ask yourself what your 4 is.
 
 ---
 
