@@ -3,7 +3,8 @@
 <title>{% if page.title and page.url != "/" %}{{ page.title }} · {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
 <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | truncate: 160 }}">
 <link rel="icon" href="{{ '/assets/img/favicon.svg' | relative_url }}" type="image/svg+xml">
-<link rel="canonical" href="{{ page.url | absolute_url }}">
+{% if page.robots %}<meta name="robots" content="noindex, nofollow">
+{% endif %}<link rel="canonical" href="{{ page.url | absolute_url }}">
 {%- assign seo_title = site.title -%}
 {%- if page.title and page.url != "/" -%}{%- assign seo_title = page.title | append: " · " | append: site.title -%}{%- endif -%}
 {%- assign seo_desc = page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 200 -%}
