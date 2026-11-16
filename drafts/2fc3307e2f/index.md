@@ -37,6 +37,10 @@ A model will always offer you the 7: the most likely answer, beautifully phrased
 2. **Decide what good looks like before you start.** Otherwise twenty polished options pick for you.
 3. **Draft before you ask.** Let the model edit your thinking, not replace it.
 4. **Make it argue with you.** Ask what is wrong with your view, not to write it for you.
+
+*Now that you have found your 4, make sure it is yours.*
+
+{: start="5"}
 5. **Read it aloud.** If it doesn't sound like you, it isn't done.
 
 And once in a while, write something with no help at all.
