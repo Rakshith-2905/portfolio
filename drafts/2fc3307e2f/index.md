@@ -1,39 +1,35 @@
 ---
 layout: post
-title: "A World of 7s"
+title: "Why Every Chatbot Picks 7"
 date: 2026-11-10
 kind: Opinion
 permalink: /drafts/2fc3307e2f/
 sitemap: false
 robots: noindex
 unlisted: true
-excerpt: "Draft, not yet published."
+excerpt: "Chatbots pick 7 the way people do, cubed. The same pull is flattening how we write, code and argue, and it takes a few habits to push back."
 ---
 
 <div class="draft-banner">Draft, not yet published. Please don't share.</div>
 
-Try this before you read on. Open any chatbot and type: *"Pick a random number between 1 and 10. Reply with only the number."*
+Ask a chatbot for a random number between 1 and 10 and it will probably say 7. You may have seen that trick already. What interests me is where the 7 comes from.
 
-It said 7, didn't it?
+People do it too. In 1976, psychologists [Michael Kubovy and Joseph Psotka](https://psycnet.apa.org/record/1977-00345-001) asked 558 people for a random digit, and 28% said 7. Chatbots go much further. When the AI advertising consultancy Springboards asked the big models a hundred times each, GPT said 7 on 92 occasions, Claude on 90 and Gemini every time ([as reported by Ian Leslie](https://www.ian-leslie.com/p/why-are-llms-fixated-on-the-number)). Across six models, seven languages and 75,600 queries, [Javier Coronado-Blázquez](https://arxiv.org/abs/2502.19965) found that "7 is the preferred value by far for every single model." Chance would give 7 one time in ten.
 
-It is not your chatbot. When the AI advertising consultancy Springboards asked the biggest models a hundred times each, GPT said 7 on 92 occasions, Claude on 90 and Gemini every single time (as reported by [Ian Leslie](https://www.ian-leslie.com/p/why-are-llms-fixated-on-the-number)). In a controlled study of six models across seven languages and 75,600 queries, [Javier Coronado-Blázquez](https://arxiv.org/abs/2502.19965) found that "7 is the preferred value by far for every single model." Chance would give you 7 one time in ten.
-
-**People pick 7 too.** In a classic 1976 study, psychologists [Michael Kubovy and Joseph Psotka](https://psycnet.apa.org/record/1977-00345-001) asked 558 people for a random digit, and 28% chose 7. The chatbot did not invent our bias. It learned it from our writing and then amplified it. Raise the human preference to roughly the third power and you get the chatbot numbers almost exactly. **Chatbots pick the way people do, cubed.**
+Take the human preference, raise it to roughly the third power, and you land on the chatbot numbers almost exactly. The model did not invent our bias. It learned it from us and turned it up: our habits, cubed.
 
 <figure>
   <img src="{{ '/assets/img/posts/oped/oped-seven.png' | relative_url }}" alt="Left: share of answers that are 7 as human preference is amplified, with people at 28% and chatbots at 80 to 92%. Right: the five most repeated jokes out of 1,008 requests.">
   <figcaption>People sit at 28%; chatbots correspond to amplifying that preference by a power of about 3 to 4. Right: asked for a joke 1,008 times, ChatGPT returned the same scarecrow joke 140 times.</figcaption>
 </figure>
 
-With a number, it does not matter. With a cover letter, a product spec or an argument about social media, the same pull applies.
+For a number, who cares. But a cover letter, a product spec or an argument about social media goes through the same machinery. I feel that pull myself. English is not my first language, and a model can make my sentences fluent in seconds. It can also make them sound like everyone else's.
 
-<p class="draft-anecdote">[Your line here, in your own words: a sentence or two from your own experience, for example writing in English as a second language, and what it means that Indian writers using AI drifted toward Western styles.]</p>
-
-The fixes are simple, so here they are first. The evidence and the mechanics follow for anyone who wants them.
+The advice comes first. The evidence and the mechanics are further down for anyone who wants them.
 
 ## What to do: find your 4
 
-A model will always offer you the 7: the most likely answer, beautifully phrased. For anything that matters, find your 4 first.
+A model will always offer you the 7: the likeliest answer, nicely phrased. For anything that matters, find your 4 first.
 
 1. **Hand off the chores, not the judgment.** Know which one you are asking for.
 2. **Decide what good looks like before you start.** Otherwise twenty polished options pick for you.
@@ -50,25 +46,25 @@ And once in a while, write something with no help at all.
 ## The evidence
 
 <figure>
-  <img src="{{ '/assets/img/posts/oped/oped-evidence.png' | relative_url }}" alt="Two bar charts: people find about 3 distinct ways to solve an introductory coding problem where LLMs find about 2; Indian and US essays become more alike with a GPT-4o autocomplete, cosine similarity rising from 0.48 to 0.54">
-  <figcaption>Two examples of the pull toward the middle, one in code and one in writing.</figcaption>
+  <img src="{{ '/assets/img/posts/oped/oped-evidence.png' | relative_url }}" alt="Three numbers: story similarity rose by 10.7% of the human-only spread when writers had one AI idea; models find about 2 distinct algorithms per coding problem where people find 3; 17.5% of sentences in computer-science abstracts were substantially LLM-modified by early 2024.">
+  <figcaption>Three findings, one each for writing, code and how far this has already spread. Sources below.</figcaption>
 </figure>
 
-- **Writing gets better, and more alike.** AI ideas made stories about 8% more novel but measurably more similar to each other (Doshi and Hauser, 293 writers). With a GPT-4o autocomplete, Indian writers drifted toward Western styles (Agarwal et al.).
-- **Opinions move too.** People writing with a quietly biased assistant were about twice as likely to argue its side, and their own views shifted afterwards (Jakesch et al., 1,506 people).
-- **Code converges and bloats.** Models find fewer distinct algorithms than people do, about two where people find three (EMNLP Findings 2025), and agent-written code is 2.3 times more verbose than code in human projects (SlopCodeBench, 2026). Real repositories show no consistent rise in similarity yet (Marchezan et al., 2026).
-- **We trust it more than we check it.** Developers with an AI assistant wrote less secure code but were more likely to believe it was secure (Perry et al.). The mistakes are real: lawyers fined for citing cases ChatGPT invented, and Air Canada held liable for a refund policy its chatbot made up.
-- **It is already everywhere.** Up to 17.5% of sentences in computer-science abstracts were substantially LLM-modified by early 2024 (Liang et al.), and "delves" became 28 times more common in PubMed than its trend predicts (Kobak et al.).
+- Writing gets better, and more alike. AI ideas made stories about 8% more novel but measurably more similar to each other (Doshi and Hauser, 293 writers). With a GPT-4o autocomplete, Indian writers drifted toward Western styles (Agarwal et al.).
+- Opinions move too. People writing with a quietly biased assistant were about twice as likely to argue its side, and their own views shifted afterwards (Jakesch et al., 1,506 people).
+- Code converges and bloats. Models find fewer distinct algorithms than people do, about two where people find three (EMNLP Findings 2025), and agent-written code is 2.3 times more verbose than code in human projects (SlopCodeBench, 2026). Real repositories show no consistent rise in similarity yet (Marchezan et al., 2026).
+- We trust it more than we check it. Developers with an AI assistant wrote less secure code but were more likely to believe it was secure (Perry et al.). Lawyers have been fined for citing cases ChatGPT invented, and Air Canada was held liable for a refund policy its chatbot made up.
+- It is already everywhere. Up to 17.5% of sentences in computer-science abstracts were substantially LLM-modified by early 2024 (Liang et al.), and "delves" became 28 times more common in PubMed than its trend predicts (Kobak et al.).
 
-The effects are small to medium and mostly from short lab studies. The worry is what happens when they repeat across billions of uses.
+Most of these effects are small to medium and come from short lab studies. They matter because they add up across billions of uses.
 
 ## Why it happens
 
-**Models are built to predict the likely.** A language model learns from billions of sentences how likely each possible next word is. When it writes, it does not sample evenly from that whole range. A setting called temperature controls how hard it leans toward the likeliest options. Below 1, it effectively raises every probability to a power, so the popular choice gets more popular and the rare one nearly vanishes. Picture a jukebox that plays songs in proportion to their popularity, and a knob that makes the hits play even more often. That knob is the "cubing" behind the 7.
+Models are built to predict the likely. A language model learns from billions of sentences how likely each possible next word is. When it writes, it does not sample evenly from that whole range. A setting called temperature controls how hard it leans toward the likeliest options. Below 1, it effectively raises every probability to a power, so the popular choice gets more popular and the rare one nearly vanishes. Think of a jukebox that plays songs in proportion to their popularity, with a knob that makes the hits play even more often. That knob is the cubing behind the 7.
 
-**Tuning rewards the familiar.** After this first training, assistants are fine-tuned on human ratings: people compare two answers, pick the better one, and the model learns to produce what they prefer. Raters, like all of us, tend to prefer text that feels typical: clear, balanced, safe. Mathematically, this works like turning the temperature knob down permanently, inside the model itself. Kirk et al. measured it: this kind of tuning substantially reduces output diversity. That is why, in Padmakumar and He's essay study, writing with the raw base model did not narrow people's ideas, while writing with the tuned assistant cut unique key points by about 7%.
+Tuning then rewards the familiar. After this first training, assistants are fine-tuned on human ratings: people compare two answers, pick the better one, and the model learns to produce what they prefer. Raters, like all of us, tend to prefer text that feels typical: clear, balanced, safe. Mathematically, this works like turning the temperature knob down permanently, inside the model itself. Kirk et al. measured it: this kind of tuning substantially reduces output diversity. That is why, in Padmakumar and He's essay study, writing with the raw base model did not narrow people's ideas, while writing with the tuned assistant cut unique key points by about 7%.
 
-**The loop closes.** A growing share of what gets published is model-assisted, and the next generation of models trains on it. Each round, the rare cases disappear first. Shumailov et al. showed this in *Nature*: models trained on their own output steadily lose the tails of the original distribution. Collapse is avoided when fresh human writing keeps being added alongside synthetic text rather than replaced by it (Gerstgrasser et al.).
+And the loop closes. A growing share of what gets published is model-assisted, and the next generation of models trains on it. Each round, the rare cases are the first to go. Shumailov et al. showed this in *Nature*: models trained on their own output steadily lose the tails of the original distribution. Collapse is avoided when fresh human writing keeps being added alongside synthetic text rather than replaced by it (Gerstgrasser et al.).
 
 Emails converge first because they are the most delegated. Arguments follow, because we take the model's framing along with its sentences. Ideas come last.
 
@@ -107,7 +103,7 @@ which is a permanent temperature below 1, even when you sample at \\(T = 1\\).
 
 ## From gargoyles to grey pipes
 
-We have watched this happen before, slowly, in buildings. Rainwater once left Gothic cathedrals through the mouths of carved gargoyles. On Indian temples, water runs off through stone spouts carved as the makara, a mythical sea creature. In Beijing's Forbidden City it pours through rows of carved dragon heads. In Japan it runs down rain chains, kusari-doi, from cup to cup instead of through a pipe. Every culture solved the same problem its own way, and the solution told you where you were.
+Architecture went through this slowly. Rainwater once left Gothic cathedrals through the mouths of carved gargoyles. On Indian temples it runs off through stone spouts carved as the makara, a mythical sea creature. In Beijing's Forbidden City it pours through rows of carved dragon heads. In Japan it runs down rain chains, kusari-doi, from cup to cup instead of through a pipe. Every culture solved the same problem its own way, and the spout told you where you were.
 
 <figure class="drain-grid">
   <div class="drain-cells">
@@ -122,19 +118,19 @@ We have watched this happen before, slowly, in buildings. Rainwater once left Go
   </figcaption>
 </figure>
 
-Today it is a plain pipe, the same almost everywhere. Nobody banned the gargoyle. The variety was never the goal. It came from friction: local materials, local craft, people making things by hand. When a cheaper, good-enough standard removed the friction, the variety went with it.
+Today it is a plain pipe, much the same everywhere. Nobody banned the gargoyle. Cheap standard pipes were good enough, and the carving stopped being worth it. The variety had come from friction: local stone, local craft, things made by hand. When the friction went, the variety went with it.
 
-Writing is losing its friction now. The struggle over a sentence was never just a cost. It was where the voice came from.
+Writing is losing its friction now, and the slow part, fighting with a sentence, is usually where we work out what we actually think.
 
 ## Keep the gargoyles
 
-I use these tools every day, and I build AI tutors for a living. English is not my first language, and they help me say what I mean with a fluency I did not always have, including in this article. The standard drainpipe has real virtues too. The failure was letting the default become the only option.
+I use these tools every day, including for this article, and I build AI tutors for a living. The standard drainpipe has real virtues too. The mistake was letting the default become the only option.
 
-For those of us who build these tools, that is the job: build them to work with people, not instead of them. Start from the user's words, measure how alike outputs become, and reward the thinking over the polish.
+For those of us who build these tools, the job is to make them work with people, not instead of them: start from the user's words, measure how alike the outputs become, and reward the thinking over the polish.
 
-Seven is not a bad answer. It is everyone's answer, made more so. A world of 7s is not wrong in any single case. It is just a world where nobody picks 4, and the scarecrow joke is the only joke. Progress has always come from the less likely choice: the improbable sentence, the minority view, the person who framed the problem differently. Used carelessly, these tools hand us more 7s. Used deliberately, they give everyone the fluency to say something only they would say.
+Seven is a fine answer. The trouble is that it is everyone's answer, turned up. In a world of 7s no single answer is wrong, but nobody picks 4, and the scarecrow joke is the only joke. Most progress has come from the less likely choice: an odd sentence, a minority view, someone framing the problem differently. Used carelessly, these tools hand us more 7s. Used deliberately, they give everyone the fluency to say something only they would say.
 
-So the next time a model hands you a 7, ask yourself what your 4 is.
+So the next time a model hands you a 7, ask what your 4 is.
 
 ---
 
