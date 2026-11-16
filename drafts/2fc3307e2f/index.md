@@ -27,47 +27,25 @@ Here is the twist: **people pick 7 too.** In a classic 1976 study, 28% of people
 
 That is harmless for a number. It is not harmless when the request is a cover letter, a product spec or an argument about social media, and the same pull applies.
 
-My PhD was about failure: how vision models break when real-world data drifts away from what they were trained on. The failures always lived in the tail, in the rare cases the data barely covered. I came to love the tail, because that is where you learn what a system really understands. Now I see the same thing running in reverse. This time it is not the model losing the tail. It is us.
-
-## We have seen this before
-
-Look at how buildings used to get rid of rainwater. In Gothic Europe it poured from the mouths of carved gargoyles; the word comes from the old French for throat. In Japan, rain chains called kusari-doi guide it down in a ringing line of cups. On the terraces of Beijing's Forbidden City, it drains through rows of carved dragon heads. Every culture solved the same problem its own way, and the solution told you where you were.
-
-<figure class="drain-grid">
-  <div class="drain-cells">
-    <div><img src="{{ '/assets/img/posts/oped/drain-gargoyle.jpg' | relative_url }}" alt="Stone gargoyle waterspout projecting from Notre-Dame de Paris"><span>Gargoyle, Notre-Dame de Paris</span></div>
-    <div><img src="{{ '/assets/img/posts/oped/drain-rainchain.jpg' | relative_url }}" alt="Metal rain chain of linked cups hanging from a temple roof in Yanaka, Tokyo"><span>Rain chain, Japan</span></div>
-    <div><img src="{{ '/assets/img/posts/oped/drain-dragon.jpg' | relative_url }}" alt="Row of carved marble dragon-head spouts on the terrace of the Hall of Supreme Harmony"><span>Dragon-head spouts, Forbidden City</span></div>
-    <div><img src="{{ '/assets/img/posts/oped/drain-modern.jpg' | relative_url }}" alt="Plain dark downpipe running down a stone wall into a ground drain"><span>Today, almost everywhere</span></div>
-  </div>
-  <figcaption>Four ways to move rainwater.
-    <small class="drain-credits">Photos: <a href="https://commons.wikimedia.org/wiki/File:Cath%C3%A9drale_Notre-Dame_(g%C3%A1rgolas).004_-_Paris.jpg">Fernando Losada Rodríguez</a> / CC BY-SA 4.0; <a href="https://commons.wikimedia.org/wiki/File:At_a_Yanaka_Temple,_Tokyo_JP.jpg">Stefano Vigorelli</a> / CC BY-SA 4.0; <a href="https://commons.wikimedia.org/wiki/File:Chishou_gargoyles_of_Hall_of_Supreme_Harmony.jpg">そらみみ</a> / CC BY-SA 4.0; <a href="https://commons.wikimedia.org/wiki/File:Downspout_and_drain_-_geograph.org.uk_-_6741959.jpg">Adrian Taylor</a> / CC BY-SA 2.0. All via Wikimedia Commons.</small>
-  </figcaption>
-</figure>
-
-Today it is a grey plastic or aluminium tube, the same in almost every city on earth. Nobody banned the gargoyle. The standard pipe was simply cheaper, faster and good enough, and thousands of reasonable choices added up to sameness.
-
-LLMs are the standard pipe for language. They are cheap, fast and good enough, which is exactly why they will win by default unless we choose otherwise.
-
 The fixes are simple, so here they are first. The evidence and the mechanics follow for anyone who wants them.
 
-## What to do: hold the reins
+## What to do: pick the destination yourself
 
-A model is a strong, fast horse that knows every well-worn path. Let it choose the route and it takes you where every other horse goes. The skill is deciding where you are going before you get on.
+Think of a model like GPS. It is brilliant at getting you somewhere, and it sends everyone down the same route. Choose where you are going yourself, and let it handle the turns.
 
-**Decide before you ask.** For anything that carries your judgment (the pitch, the hard feedback, the design, the decision memo) write your own rough take first and let the model edit it. Routine notes are fine to hand off. The order matters. Start from its draft and you edit toward its voice. Start from yours and it edits toward you.
+- **Think before you prompt.** Write your rough take first, even three bullet points. The model should edit your thinking, not replace it.
+- **Hand off the chores, not the judgment.** Formatting, summaries, boilerplate: delegate freely. The idea, the argument, the decision: keep.
+- **Decide what good looks like before you see options.** Otherwise twenty polished choices pick for you, and you end up with something you never wanted.
+- **Make it argue with you.** Ask what is wrong with your view, not to write your view for you.
+- **If it doesn't sound like you, it isn't done.** Read it aloud before you send it.
 
-**Don't let the options choose for you.** A model will hand you endless polished options, and more options do not mean more freedom. Faced with twenty finished-sounding drafts, we stop judging and take the one that sounds most complete, often something we never wanted in the first place. So set your criteria before you look. Ask for a few genuinely different options rather than twenty variations of the obvious, ask the model to argue against your view, and then you choose.
+And once in a while, write something with no help at all.
 
-**Keep the hard parts yours.** Let the model write the boilerplate, in code and in prose. Keep the parts where your judgment is the product, and read what you accept as if a stranger wrote it.
-
-**Write some things with no help at all.** It keeps the skill alive, and every unassisted page feeds the tail that future models learn from.
-
-**If you build these tools, build them to teach, not replace.**
+**If you build these tools, build them to work with people, not instead of them.**
 
 > When I build tutors, the easy thing to ship is a system that answers the student's question well. Instead, I have it answer with a question first: what the student already thinks, where they got stuck, what they would try next. The student's reasoning stays the draft, and the model only edits it.
 
-Measure how similar your outputs are across users and treat a rise as a bug. Start from the user's words, not a generated draft. And wherever people are judged, in classrooms or at work, reward the thinking rather than the polish.
+Start from the user's words, measure how alike your outputs become, and reward the thinking over the polish.
 
 ## The evidence
 
@@ -94,6 +72,59 @@ The effects are small to medium and mostly from short lab studies. The worry is 
 
 Emails converge first because they are the most delegated. Arguments follow, because we take the model's framing along with its sentences. Ideas come last.
 
+<details class="math-box" markdown="1">
+<summary>For the curious: the math behind "cubed" (a two-minute read)</summary>
+
+**Sharpening.** At temperature \\(T\\), a model samples from
+
+<div class="math">\[ p_T(y) \;=\; \frac{p(y)^{1/T}}{\sum_{y'} p(y')^{1/T}} . \]</div>
+
+For \\(T<1\\), every probability is raised to a power above one, which piles weight onto the most common answers. The 7 result fits this exactly. If people put \\(h_7 = 0.28\\) on 7 and about 0.08 on each other digit, raising those preferences to a power \\(k\\) gives
+
+<div class="math">\[ p_7(k) \;=\; \frac{h_7^{\,k}}{h_7^{\,k} + 9\,h_{\text{other}}^{\,k}} . \]</div>
+
+The 80% rate corresponds to \\(k \approx 2.9\\), and the 90% and 92% rates to \\(k \approx 3.5\\) and \\(3.7\\). A cubed preference is the same thing as decoding at \\(T \approx 0.3\\).
+
+<figure>
+  <img src="{{ '/assets/img/posts/oped/oped-temperature.png' | relative_url }}" alt="Effective number of phrasings and head versus tail probability mass as a function of temperature">
+  <figcaption>A toy space of 10,000 phrasings with word-frequency-like (Zipf) popularity. Going from T = 1.0 to T = 0.7 cuts the effective number of phrasings from 328 to 16. The top 10 phrasings go from 41% to 81% of all output.</figcaption>
+</figure>
+
+**Tuning does the same thing.** Preference tuning has a known optimum, \\(\pi^*(y) \propto \pi_{\text{ref}}(y)\exp\big(r(y)/\beta\big)\\). If raters reward typical text, so that the reward includes a term \\(\gamma \log \pi_{\text{ref}}(y)\\), this becomes
+
+<div class="math">\[ \pi^*(y) \;\propto\; \pi_{\text{ref}}(y)^{\,1+\gamma/\beta}\;\exp\!\big(r_{\text{true}}(y)/\beta\big), \]</div>
+
+which is a permanent temperature below 1, even when you sample at \\(T = 1\\).
+
+**Human writing sets the floor.** If a share \\(\alpha\\) of each new training corpus is model-written and the rest comes from the human distribution \\(q\\), then \\(p_{t+1} = (1-\alpha)\,q + \alpha\,M(p_t)\\), and because entropy is concave, \\(H(p_{t+1}) \ge (1-\alpha)\,H(q)\\), however sharp the model is.
+
+<figure>
+  <img src="{{ '/assets/img/posts/oped/oped-feedback.png' | relative_url }}" alt="Effective number of ideas and tail mass over 60 generations for synthetic shares from 0% to 100%">
+  <figcaption>Simulation where each generation's output becomes part of the next corpus. At a 50% synthetic share, diversity falls from 328 to 130 effective ideas. At 90%, it falls to about 4. A toy model: it shows the shape, not a forecast.</figcaption>
+</figure>
+
+</details>
+
+## From gargoyles to grey pipes
+
+We have watched this happen before, slowly, in buildings. Rainwater once left Gothic cathedrals through the mouths of carved gargoyles. In Japan it ran down rain chains of ringing cups. In Beijing's Forbidden City it poured through rows of carved dragon heads. Every culture solved the same problem its own way, and the solution told you where you were.
+
+<figure class="drain-grid">
+  <div class="drain-cells">
+    <div><img src="{{ '/assets/img/posts/oped/drain-gargoyle.jpg' | relative_url }}" alt="Stone gargoyle waterspout projecting from Notre-Dame de Paris"><span>Gargoyle, Notre-Dame de Paris</span></div>
+    <div><img src="{{ '/assets/img/posts/oped/drain-rainchain.jpg' | relative_url }}" alt="Metal rain chain of linked cups hanging from a temple roof in Yanaka, Tokyo"><span>Rain chain, Japan</span></div>
+    <div><img src="{{ '/assets/img/posts/oped/drain-dragon.jpg' | relative_url }}" alt="Row of carved marble dragon-head spouts on the terrace of the Hall of Supreme Harmony"><span>Dragon-head spouts, Forbidden City</span></div>
+    <div><img src="{{ '/assets/img/posts/oped/drain-modern.jpg' | relative_url }}" alt="Plain dark downpipe running down a stone wall into a ground drain"><span>Today, almost everywhere</span></div>
+  </div>
+  <figcaption>Four ways to move rainwater.
+    <small class="drain-credits">Photos: <a href="https://commons.wikimedia.org/wiki/File:Cath%C3%A9drale_Notre-Dame_(g%C3%A1rgolas).004_-_Paris.jpg">Fernando Losada Rodríguez</a> / CC BY-SA 4.0; <a href="https://commons.wikimedia.org/wiki/File:At_a_Yanaka_Temple,_Tokyo_JP.jpg">Stefano Vigorelli</a> / CC BY-SA 4.0; <a href="https://commons.wikimedia.org/wiki/File:Chishou_gargoyles_of_Hall_of_Supreme_Harmony.jpg">そらみみ</a> / CC BY-SA 4.0; <a href="https://commons.wikimedia.org/wiki/File:Downspout_and_drain_-_geograph.org.uk_-_6741959.jpg">Adrian Taylor</a> / CC BY-SA 2.0. All via Wikimedia Commons.</small>
+  </figcaption>
+</figure>
+
+Today it is a plain pipe, the same almost everywhere. Nobody banned the gargoyle. The variety was never the goal. It came from friction: local materials, local craft, people making things by hand. When a cheaper, good-enough standard removed the friction, the variety went with it.
+
+Writing is losing its friction now. The struggle over a sentence was never just a cost. It was where the voice came from.
+
 ## Pick 4
 
 This is not an argument against LLMs. I use them every day, and I build AI tutors for a living. The weakest writers gain the most from them, and that matters. The standard drainpipe has real virtues too. The failure was letting the default become the only option.
@@ -102,7 +133,7 @@ Seven is not a bad answer. It is the most human answer, made more human than any
 
 ---
 
-*A note on how this was written: I wrote the first draft, and the idea, the argument and the final calls are mine. I then used an AI assistant to tighten the prose, research and check sources, and pushed back on it until the piece said what I meant. That is the point. These tools are remarkable when you do the thinking and hold the reins.*
+*A note on how this was written: I wrote the first draft, and the idea, the argument and the final calls are mine. I then used an AI assistant to tighten the prose, research and check sources, and pushed back on it until the piece said what I meant. That is the point. These tools are remarkable when you do the thinking.*
 
 *Rakshith Subramanyam is a technical founder and AI researcher who builds AI tutoring products.*
 
