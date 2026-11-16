@@ -48,8 +48,8 @@ And once in a while, write something with no help at all.
 ## The evidence
 
 <figure>
-  <img src="{{ '/assets/img/posts/oped/oped-evidence.png' | relative_url }}" alt="Bar charts: measured convergence in four controlled studies, and the estimated share of LLM-modified abstracts in four corpora">
-  <figcaption>Top: how much more alike people's writing became with an LLM in controlled studies (the metrics differ, so compare direction, not length). Bottom: estimated share of published scientific writing that is already substantially LLM-modified.</figcaption>
+  <img src="{{ '/assets/img/posts/oped/oped-evidence.png' | relative_url }}" alt="Three panels: bar chart of how much more alike writing became in three controlled studies; two small bar charts showing LLMs find about 2 distinct algorithms per problem versus about 3 for people, and AI-agent code is 2.3 times more verbose than human code; bar chart of the estimated share of scientific abstracts that are LLM-modified">
+  <figcaption>Top: how much more alike people's writing became with an LLM in controlled studies (the metrics differ, so compare direction, not length). Middle: code written by models finds fewer distinct algorithms and runs longer than human code. Bottom: estimated share of published scientific writing that is already substantially LLM-modified.</figcaption>
 </figure>
 
 - **Writing gets better, and more alike.** AI ideas made stories about 8% more novel but measurably more similar to each other (Doshi and Hauser, 293 writers). With a GPT-4o autocomplete, Indian writers drifted toward Western styles (Agarwal et al.).
