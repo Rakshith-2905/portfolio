@@ -45,7 +45,7 @@ And once in a while, write something with no help at all.
 
 <figure>
   <img src="{{ '/assets/img/posts/oped/oped-evidence.png' | relative_url }}" alt="Bar charts: measured convergence in four controlled studies, and the estimated share of LLM-modified abstracts in four corpora">
-  <figcaption>Left: convergence in controlled writing studies (metrics differ, so compare direction, not length). Right: estimated share of LLM-modified abstracts.</figcaption>
+  <figcaption>Top: how much more alike people's writing became with an LLM in controlled studies (the metrics differ, so compare direction, not length). Bottom: estimated share of published scientific writing that is already substantially LLM-modified.</figcaption>
 </figure>
 
 - **Better individually, narrower together.** In Doshi and Hauser's study of 293 writers, AI ideas made stories about 8% more novel, but measurably more similar to each other.
@@ -53,16 +53,17 @@ And once in a while, write something with no help at all.
 - **A direction.** With a GPT-4o autocomplete, Indian writers' essays drifted toward Western styles (Agarwal et al.).
 - **Opinions too.** People writing with a quietly biased assistant were about twice as likely to argue its side, and their own views shifted (Jakesch et al., 1,506 people).
 - **Already widespread.** Up to 17.5% of sentences in computer-science abstracts were substantially LLM-modified by early 2024 (Liang et al.). In PubMed, "delves" became 28 times more common than its trend predicts (Kobak et al.).
+- **Code too, with a caveat.** Asked to solve the same programming problems, models found fewer distinct algorithms than human programmers: on introductory problems, about two where people found three (EMNLP Findings 2025). GitClear's 2026 analysis of 623 million code changes reports duplicated code blocks up 81% since 2023 and refactoring moves down 70%, though that is an industry report. Real projects may be holding up better: an October 2026 study of 50 long-lived open-source projects found no consistent rise in code similarity so far (Marchezan et al.).
 
 The effects are small to medium and mostly from short lab studies. The worry is how they compound across billions of uses.
 
 ## Why it happens
 
-**Sharpening.** Low-temperature decoding raises every probability to a power, which piles weight onto the most common phrasing. That is the "cubing" behind the 7.
+**Models are built to predict the likely.** A language model learns from billions of sentences how likely each possible next word is. When it writes, it does not sample evenly from that whole range. A setting called temperature controls how hard it leans toward the likeliest options. Below 1, it effectively raises every probability to a power, so the popular choice gets more popular and the rare one nearly vanishes. Picture a jukebox that plays songs in proportion to their popularity, and a knob that makes the hits play even more often. That knob is the "cubing" behind the 7.
 
-**Tuning rewards the familiar.** Raters prefer text that feels typical, and tuning on their preferences acts like turning the temperature down permanently. Kirk et al. found this kind of tuning substantially reduces output diversity, which is why the tuned model narrowed essays and the base model did not.
+**Tuning rewards the familiar.** After this first training, assistants are fine-tuned on human ratings: people compare two answers, pick the better one, and the model learns to produce what they prefer. Raters, like all of us, tend to prefer text that feels typical: clear, balanced, safe. Mathematically, this works like turning the temperature knob down permanently, inside the model itself. Kirk et al. measured it: this kind of tuning substantially reduces output diversity. That is why, in the essay study, the raw base model did not narrow people's ideas and the tuned assistant did.
 
-**The loop closes.** Models trained on model-written text lose the rare cases first (Shumailov et al., *Nature*). Fresh human writing is what puts them back. Collapse is avoided when human data accumulates alongside synthetic data rather than being replaced by it (Gerstgrasser et al.).
+**The loop closes.** A growing share of what gets published is model-assisted, and the next generation of models trains on it. Each round, the rare cases disappear first, like photocopying a photocopy, where the fine detail goes before anything else. Shumailov et al. showed this in *Nature*: models trained on their own output steadily lose the tails of the original distribution. The fix is known too. Collapse is avoided when fresh human writing keeps being added alongside synthetic text rather than replaced by it (Gerstgrasser et al.).
 
 Emails converge first because they are the most delegated. Arguments follow, because we take the model's framing along with its sentences. Ideas come last.
 
@@ -145,6 +146,9 @@ So the next time a model hands you a 7, ask yourself what your 4 is.
 - Van Koevering, K., and Kleinberg, J. (2024). How Random is Random? Evaluating the Randomness and Humaneness of LLMs' Coin Flips. <https://arxiv.org/abs/2406.00092>
 - Agarwal, D., Naaman, M., and Vashistha, A. (2025). AI Suggestions Homogenize Writing Toward Western Styles and Diminish Cultural Nuances. *CHI 2025*. <https://arxiv.org/abs/2409.11360>
 - Doshi, A. R., and Hauser, O. P. (2024). Generative AI enhances individual creativity but reduces the collective diversity of novel content. *Science Advances*. <https://doi.org/10.1126/sciadv.adn5290>
+- GitClear (2026). The Maintainability Gap: 2026 AI Code Quality Research (industry report). <https://www.gitclear.com/the_ai_code_quality_maintainability_gap>
+- How Diversely Can Language Models Solve Problems? Exploring the Algorithmic Diversity of Model-Generated Code. *Findings of EMNLP 2025*. <https://arxiv.org/abs/2503.00691>
+- Marchezan, L., et al. (2026). Does AI-Assisted Development Homogenize Software? An Empirical Study of Code Similarity, Quality, and Evolution. <https://arxiv.org/abs/2610.24093>
 - Gerstgrasser, M., et al. (2024). Is Model Collapse Inevitable? <https://arxiv.org/abs/2404.01413>
 - Jakesch, M., et al. (2023). Co-Writing with Opinionated Language Models Affects Users' Views. *CHI 2023*. <https://arxiv.org/abs/2302.00560>
 - Kirk, R., et al. (2024). Understanding the Effects of RLHF on LLM Generalisation and Diversity. *ICLR 2024*. <https://arxiv.org/abs/2310.06452>
