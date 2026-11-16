@@ -132,8 +132,6 @@ So the next time a model hands you a 7, ask yourself what your 4 is.
 
 ---
 
-*Rakshith Subramanyam is a technical founder and AI researcher who builds AI tutoring products.*
-
 ### Sources
 
 - Coronado-Blázquez, J. (2025). Deterministic or probabilistic? The psychology of LLMs as random number generators. <https://arxiv.org/abs/2502.19965>
