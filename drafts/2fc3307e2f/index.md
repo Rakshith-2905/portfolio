@@ -120,7 +120,7 @@ Architecture went through this slowly. Rainwater once left Gothic cathedrals thr
 
 Today it is a plain pipe, much the same everywhere. Nobody banned the gargoyle. Cheap standard pipes were good enough, and the carving stopped being worth it. The variety had come from friction: local stone, local craft, things made by hand. When the friction went, the variety went with it.
 
-Writing is losing its friction now, and the slow part, fighting with a sentence, is usually where we work out what we actually think.
+Now the same thing is happening to writing, code and decisions, and much faster. The friction was never just a cost. Fighting with a sentence, debugging your own code, arguing a decision through: that struggle is where we work out what we actually think. Remove it everywhere, and we lose more than variety. We lose the thinking that produced it.
 
 ## Keep the gargoyles
 
