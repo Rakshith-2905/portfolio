@@ -48,7 +48,7 @@ And once in a while, write something with no help at all.
   <figcaption>Left: convergence in controlled writing studies (metrics differ, so compare direction, not length). Right: estimated share of LLM-modified abstracts.</figcaption>
 </figure>
 
-- **Better individually, narrower together.** In Doshi and Hauser's study of 300 writers, AI ideas made stories about 8% more novel, but about 11% more similar to each other.
+- **Better individually, narrower together.** In Doshi and Hauser's study of 293 writers, AI ideas made stories about 8% more novel, but measurably more similar to each other.
 - **Ideas, not just words.** Writing with an instruction-tuned model cut the share of unique key points in essays by about 7% (Padmakumar and He). The raw base model had no significant effect.
 - **A direction.** With a GPT-4o autocomplete, Indian writers' essays drifted toward Western styles (Agarwal et al.).
 - **Opinions too.** People writing with a quietly biased assistant were about twice as likely to argue its side, and their own views shifted (Jakesch et al., 1,506 people).

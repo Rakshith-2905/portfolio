@@ -10,7 +10,7 @@ out={}
 
 # ---------- Fig 1: evidence ----------
 fig,(a,b)=plt.subplots(1,2,figsize=(12,4.6),gridspec_kw={"width_ratios":[1.25,1]})
-rows=[("Story similarity, writers given one AI idea\nDoshi & Hauser 2024, N=300",10.7),
+rows=[("Story similarity gain, one AI idea (% of human spread)\nDoshi & Hauser 2024, N=293",10.7),
       ("India–US essay similarity, 0.48 → 0.54\nAgarwal et al. 2025, N=118",(0.54/0.48-1)*100),
       ("Loss of unique key points (threshold 0.6)\nPadmakumar & He 2024, InstructGPT vs solo",(1-0.877/0.941)*100),
       ("Loss of unique 4-grams\nPadmakumar & He 2024, InstructGPT vs solo",(1-0.953/0.973)*100)]
@@ -18,8 +18,8 @@ y=np.arange(len(rows))[::-1]
 a.barh(y,[r[1] for r in rows],color=NAVY,height=0.55)
 for yi,r in zip(y,rows): a.text(r[1]+0.3,yi,f"{r[1]:.1f}%",va="center",color=INK,fontsize=10.5)
 a.set_yticks(y); a.set_yticklabels([r[0] for r in rows],fontsize=9.5)
-a.set_xlabel("Convergence: % more similar, or % less diverse"); a.set_xlim(0,15); a.grid(axis="y",visible=False)
-a.set_title("Measured convergence when people write with an LLM",loc="left",fontsize=11.5,color=INK)
+a.set_xlabel("Convergence, % (each study's own measure)"); a.set_xlim(0,15); a.grid(axis="y",visible=False)
+a.set_title("Writing converges when people use an LLM",loc="left",fontsize=11.5,color=INK)
 rows2=[("CS arXiv abstracts, Feb 2024\nLiang et al. 2024",17.5),("Biomedical abstracts, 2024 (lower bound)\nKobak et al. 2024",13.5),
        ("Nature-portfolio abstracts, Feb 2024\nLiang et al. 2024",6.3),("Math arXiv abstracts, Feb 2024\nLiang et al. 2024",4.9)]
 y2=np.arange(len(rows2))[::-1]
@@ -27,7 +27,7 @@ b.barh(y2,[r[1] for r in rows2],color=GOLD,height=0.55)
 for yi,r in zip(y2,rows2): b.text(r[1]+0.3,yi,f"{r[1]:.1f}%",va="center",color=INK,fontsize=10.5)
 b.set_yticks(y2); b.set_yticklabels([r[0] for r in rows2],fontsize=9.5); b.set_xlim(0,22); b.grid(axis="y",visible=False)
 b.set_xlabel("Estimated % of abstracts")
-b.set_title("Share of published text already LLM-modified",loc="left",fontsize=11.5,color=INK)
+b.set_title("Share of abstracts already LLM-modified",loc="right",fontsize=11.5,color=INK)
 fig.tight_layout(); fig.savefig("oped-evidence.png"); plt.close(fig)
 
 # ---------- Fig 2: temperature sharpening ----------
