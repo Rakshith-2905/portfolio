@@ -16,9 +16,9 @@ Try this before you read on. Open any chatbot and type: *"Pick a random number b
 
 It said 7, didn't it?
 
-It is not your chatbot. In a test [reported by Ian Leslie](https://www.ian-leslie.com/p/why-are-llms-fixated-on-the-number) that asked each model a hundred times, GPT said 7 on 92 occasions, Claude on 90 and Gemini every single time. A [controlled study](https://arxiv.org/abs/2502.19965) by Coronado-Blázquez (2025), across six models and 75,600 queries, found 7 was "the preferred value by far for every single model." Chance would give you 7 one time in ten.
+It is not your chatbot. When the AI advertising consultancy Springboards asked the biggest models a hundred times each, GPT said 7 on 92 occasions, Claude on 90 and Gemini every single time (as reported by [Ian Leslie](https://www.ian-leslie.com/p/why-are-llms-fixated-on-the-number)). In a controlled study of six models across seven languages and 75,600 queries, [Javier Coronado-Blázquez](https://arxiv.org/abs/2502.19965) found that "7 is the preferred value by far for every single model." Chance would give you 7 one time in ten.
 
-Here is the twist: **people pick 7 too.** In a classic 1976 study by [Kubovy and Psotka](https://psycnet.apa.org/record/1977-00345-001), 28% of people asked for a random digit chose 7. The chatbot did not invent our bias. It learned it from our writing and then amplified it. Raise the human preference to roughly the third power and you get the chatbot numbers almost exactly. **Chatbots pick the way people do, cubed.**
+Here is the twist: **people pick 7 too.** In a classic 1976 study, psychologists [Michael Kubovy and Joseph Psotka](https://psycnet.apa.org/record/1977-00345-001) asked 558 people for a random digit, and 28% chose 7. The chatbot did not invent our bias. It learned it from our writing and then amplified it. Raise the human preference to roughly the third power and you get the chatbot numbers almost exactly. **Chatbots pick the way people do, cubed.**
 
 <figure>
   <img src="{{ '/assets/img/posts/oped/oped-seven.png' | relative_url }}" alt="Left: share of answers that are 7 as human preference is amplified, with people at 28% and chatbots at 80 to 92%. Right: the five most repeated jokes out of 1,008 requests.">
