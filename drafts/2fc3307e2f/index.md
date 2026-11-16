@@ -120,7 +120,7 @@ Architecture went through this slowly. Rainwater once left Gothic cathedrals thr
 
 Today it is a plain pipe, much the same everywhere. Nobody banned the gargoyle. Cheap standard pipes were good enough, and the carving stopped being worth it. The variety had come from friction: local stone, local craft, things made by hand. When the friction went, the variety went with it.
 
-Now the same thing is happening to writing, code and decisions, and much faster. The friction was never just a cost. Fighting with a sentence, debugging your own code, arguing a decision through: that struggle is where we work out what we actually think. Remove it everywhere, and we lose more than variety. We lose the thinking that produced it.
+Writing is losing its friction now, and so is most work we used to do slowly. That friction was never just a cost. Fighting with a sentence is how we find out what we think. Debugging is how an engineer learns how a system really works. Working a proof by hand is how a student comes to understand it. Psychologists call this a desirable difficulty: the struggle that slows you down is the part that makes you learn (Bjork). Take it away and the work still gets done. We just stop getting better at it.
 
 ## Keep the gargoyles
 
@@ -142,6 +142,7 @@ So the next time a model hands you a 7, ask what your 4 is.
 - Leslie, I. (2025). Why are LLMs fixated on the number 7? <https://www.ian-leslie.com/p/why-are-llms-fixated-on-the-number>
 - Van Koevering, K., and Kleinberg, J. (2024). How Random is Random? Evaluating the Randomness and Humaneness of LLMs' Coin Flips. <https://arxiv.org/abs/2406.00092>
 - Agarwal, D., Naaman, M., and Vashistha, A. (2025). AI Suggestions Homogenize Writing Toward Western Styles and Diminish Cultural Nuances. *CHI 2025*. <https://arxiv.org/abs/2409.11360>
+- Bjork, R. A. (1994). Memory and metamemory considerations in the training of human beings. In J. Metcalfe & A. P. Shimamura (Eds.), *Metacognition: Knowing about Knowing* (pp. 185–205). MIT Press.
 - Doshi, A. R., and Hauser, O. P. (2024). Generative AI enhances individual creativity but reduces the collective diversity of novel content. *Science Advances*. <https://doi.org/10.1126/sciadv.adn5290>
 - How Diversely Can Language Models Solve Problems? Exploring the Algorithmic Diversity of Model-Generated Code. *Findings of EMNLP 2025*. <https://arxiv.org/abs/2503.00691>
 - Marchezan, L., et al. (2026). Does AI-Assisted Development Homogenize Software? An Empirical Study of Code Similarity, Quality, and Evolution. <https://arxiv.org/abs/2610.24093>
