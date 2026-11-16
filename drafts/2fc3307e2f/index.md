@@ -54,7 +54,7 @@ And once in a while, write something with no help at all.
 - **Opinions too.** People writing with a quietly biased assistant were about twice as likely to argue its side, and their own views shifted (Jakesch et al., 1,506 people).
 - **Already widespread.** Up to 17.5% of sentences in computer-science abstracts were substantially LLM-modified by early 2024 (Liang et al.). In PubMed, "delves" became 28 times more common than its trend predicts (Kobak et al.).
 - **Code too, with a caveat.** Asked to solve the same programming problems, models found fewer distinct algorithms than human programmers: on introductory problems, about two where people found three (EMNLP Findings 2025). GitClear's 2026 analysis of 623 million code changes reports duplicated code blocks up 81% since 2023 and refactoring moves down 70%, though that is an industry report. An ICLR 2026 study found assistants succeed far more often in mainstream languages and frameworks than niche ones, a rich-get-richer loop that nudges new projects toward what is already popular (Gu et al.). Real projects may be holding up better: an October 2026 study of 50 long-lived open-source projects found no consistent rise in code similarity so far (Marchezan et al.).
-- **More code, not better code.** A 2026 audit found that as coding models get more capable, they write more bloated, tightly coupled code. Code volume was a near-perfect predictor of structural decay, and neither passing the tests nor more detailed prompts fixed it (Zhu, Tsantalis and Rigby). An earlier study found 63% more code smells in LLM-written Java than in professional reference solutions, with the gap widest on complex tasks (Ghosh Paul et al.).
+- **More code, not more software.** In SlopCodeBench (Orlanski et al., 2026), code written by AI coding agents was 2.3 times more verbose than code in 473 open-source Python projects, and it grew more bloated with each round of changes in three out of four runs. Telling the agent what good code looks like cut the initial bloat by up to a third. A separate 2026 audit found that more capable models write more bloated, tightly coupled code, with volume a near-perfect predictor of structural decay (Zhu, Tsantalis and Rigby). In the field, an NBER study found autonomous coding agents raised developers' commits by 240% but actual software releases by only 30% (Demirer et al., 2026).
 
 The effects are small to medium and mostly from short lab studies. The worry is how they compound across billions of uses.
 
@@ -144,8 +144,8 @@ So the next time a model hands you a 7, ask yourself what your 4 is.
 - Leslie, I. (2025). Why are LLMs fixated on the number 7? <https://www.ian-leslie.com/p/why-are-llms-fixated-on-the-number>
 - Van Koevering, K., and Kleinberg, J. (2024). How Random is Random? Evaluating the Randomness and Humaneness of LLMs' Coin Flips. <https://arxiv.org/abs/2406.00092>
 - Agarwal, D., Naaman, M., and Vashistha, A. (2025). AI Suggestions Homogenize Writing Toward Western Styles and Diminish Cultural Nuances. *CHI 2025*. <https://arxiv.org/abs/2409.11360>
+- Demirer, M., Musolff, L., and Yang, L. (2026). Writing Code vs. Shipping Code: Productivity Effects Across Generations of AI Coding Tools. NBER Working Paper 35275. <https://www.nber.org/papers/w35275>
 - Doshi, A. R., and Hauser, O. P. (2024). Generative AI enhances individual creativity but reduces the collective diversity of novel content. *Science Advances*. <https://doi.org/10.1126/sciadv.adn5290>
-- Ghosh Paul, D., Zhu, H., and Bayley, I. (2025). Investigating The Smells of LLM Generated Code. <https://arxiv.org/abs/2510.03029>
 - Gu, F., et al. (2026). The Matthew Effect of AI Programming Assistants: A Hidden Bias in Software Evolution. *ICLR 2026*. <https://arxiv.org/abs/2509.23261>
 - GitClear (2026). The Maintainability Gap: 2026 AI Code Quality Research (industry report). <https://www.gitclear.com/the_ai_code_quality_maintainability_gap>
 - How Diversely Can Language Models Solve Problems? Exploring the Algorithmic Diversity of Model-Generated Code. *Findings of EMNLP 2025*. <https://arxiv.org/abs/2503.00691>
@@ -155,6 +155,7 @@ So the next time a model hands you a 7, ask yourself what your 4 is.
 - Kirk, R., et al. (2024). Understanding the Effects of RLHF on LLM Generalisation and Diversity. *ICLR 2024*. <https://arxiv.org/abs/2310.06452>
 - Kobak, D., et al. (2024). Delving into LLM-assisted writing in biomedical publications through excess vocabulary. <https://arxiv.org/abs/2406.07016>
 - Liang, W., et al. (2024). Mapping the Increasing Use of LLMs in Scientific Papers. <https://arxiv.org/abs/2404.01268>
+- Orlanski, G., et al. (2026). SlopCodeBench: Benchmarking How Coding Agents Degrade Over Long-Horizon Iterative Tasks. <https://arxiv.org/abs/2603.24755>
 - Padmakumar, V., and He, H. (2024). Does Writing with Language Models Reduce Content Diversity? *ICLR 2024*. <https://arxiv.org/abs/2309.05196>
 - Shumailov, I., et al. (2024). AI models collapse when trained on recursively generated data. *Nature* 631. <https://doi.org/10.1038/s41586-024-07566-y>
 - Zhu, Y., Tsantalis, N., and Rigby, P. C. (2026). AI-Generated Smells: An Analysis of Code and Architecture in LLM and Agent-Driven Development. <https://arxiv.org/abs/2605.02741>
