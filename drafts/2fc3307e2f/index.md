@@ -27,25 +27,27 @@ Here is the twist: **people pick 7 too.** In a classic 1976 study, 28% of people
 
 That is harmless for a number. It is not harmless when the request is a cover letter, a product spec or an argument about social media, and the same pull applies.
 
-<p class="draft-anecdote">I spent my PhD studying how vision models break when real-world data drifts away from what they were trained on. The failures always lived in the tail, in the rare cases the training data barely covered. That is where the models went wrong, and it is also where the interesting problems were. Watching chatbots converge on 7 feels like the same experiment run in reverse. This time it is not the model losing the tail. It is us.</p>
+My PhD was about failure: how vision models break when real-world data drifts away from what they were trained on. The failures always lived in the tail, in the rare cases the data barely covered. I came to love the tail, because that is where you learn what a system really understands. Now I see the same thing running in reverse. This time it is not the model losing the tail. It is us.
 
 The fixes are simple, so here they are first. The evidence and the mechanics follow for anyone who wants them.
 
-## What to do
+## What to do: hold the reins
 
-Every fix comes down to one idea: protect the tail.
+A model is a strong, fast horse that knows every well-worn path. Let it choose the route and it takes you where every other horse goes. The skill is deciding where you are going before you get on.
 
-**Write the first draft of anything that carries your judgment.** Routine notes are fine to delegate. But for the pitch, the hard feedback, the essay or the decision memo, start with your own rough version and let the model edit it. The order matters. Start from its draft and you edit toward its voice. Start from yours and it edits toward you.
+**Decide before you ask.** For anything that carries your judgment (the pitch, the hard feedback, the design, the decision memo) write your own rough take first and let the model edit it. Routine notes are fine to hand off. The order matters. Start from its draft and you edit toward its voice. Start from yours and it edits toward you.
 
-**Know what you want before you ask.** A chatbot will happily hand you ten polished options. That feels like freedom, but it is a menu someone else wrote. Faced with too many choices we tire, and we settle for whichever sounds most reasonable, often something we never wanted in the first place. Decide what you are after, then use the model to get there. If you want alternatives, ask for very different ones, including ones the model thinks are bad, and judge them by your criteria, not its favourite. Ride the horse; don't let the horse ride you.
+**Don't let the options choose for you.** A model will hand you endless polished options, and more options do not mean more freedom. Faced with twenty finished-sounding drafts, we stop judging and take the one that sounds most complete, often something we never wanted in the first place. So set your criteria before you look. Ask for a few genuinely different options rather than twenty variations of the obvious, ask the model to argue against your view, and then you choose.
 
-**Write some things with no help at all.** It keeps the skill alive, and every unassisted page adds to the human writing future models learn from.
+**Keep the hard parts yours.** Let the model write the boilerplate, in code and in prose. Keep the parts where your judgment is the product, and read what you accept as if a stranger wrote it.
 
-**Build tools that keep people in the saddle.** If you make products on these models, measure how alike your users' outputs become against an unassisted baseline, and treat a rise as a failing test. Start from the user's words, not a generated draft.
+**Write some things with no help at all.** It keeps the skill alive, and every unassisted page feeds the tail that future models learn from.
 
-<p class="draft-anecdote">When I build tutors, the easy thing to ship is a system that answers the student's question well. Instead, I have it answer with a question first: what the student already thinks, where they got stuck, what they would try next. The student's reasoning stays the draft, and the model only edits it.</p>
+**If you build these tools, build them to teach, not replace.**
 
-**Reward the thinking, not the polish.** Whether you are grading an essay or reading a job application, polish is no longer evidence of thought. Look at the outline, the draft and the explanation. And at the largest scale, labs should publish diversity evaluations next to capability benchmarks, because a world served by a handful of similar models loses its tail fastest.
+> When I build tutors, the easy thing to ship is a system that answers the student's question well. Instead, I have it answer with a question first: what the student already thinks, where they got stuck, what they would try next. The student's reasoning stays the draft, and the model only edits it.
+
+Measure how similar your outputs are across users and treat a rise as a bug. Start from the user's words, not a generated draft. And wherever people are judged, in classrooms or at work, reward the thinking rather than the polish.
 
 ## The evidence
 
@@ -74,7 +76,7 @@ Emails converge first because they are the most delegated. Arguments follow, bec
 
 ## Pick 4
 
-This is not an argument against LLMs. I use them every day, and I build AI tutors. The weakest writers gain the most from them, and that matters. Modernist architecture had real virtues too. The failure was letting the default become the only option, until every new downtown was the same glass towers.
+This is not an argument against LLMs. I use them every day, and I build AI tutors for a living. The weakest writers gain the most from them, and that matters. Modernist architecture had real virtues too. The failure was letting the default become the only option, until every new downtown was the same glass towers.
 
 Seven is not a bad answer. It is the most human answer, made more human than any human. A world of 7s is not wrong in any single case. It is just a world where nobody picks 4 and the scarecrow joke is the only joke. Progress lives in the tail: the improbable sentence, the minority view, the person who framed the problem differently. Used carelessly, these tools remove that tail first. Used deliberately, they give everyone the fluency to build something of their own. Pick 4 sometimes.
 
