@@ -55,6 +55,8 @@ And once in a while, write something with no help at all.
 - **Already widespread.** Up to 17.5% of sentences in computer-science abstracts were substantially LLM-modified by early 2024 (Liang et al.). In PubMed, "delves" became 28 times more common than its trend predicts (Kobak et al.).
 - **Code too, with a caveat.** Asked to solve the same programming problems, models found fewer distinct algorithms than human programmers: on introductory problems, about two where people found three (EMNLP Findings 2025). GitClear's 2026 analysis of 623 million code changes reports duplicated code blocks up 81% since 2023 and refactoring moves down 70%, though that is an industry report. An ICLR 2026 study found assistants succeed far more often in mainstream languages and frameworks than niche ones, a rich-get-richer loop that nudges new projects toward what is already popular (Gu et al.). Real projects may be holding up better: an October 2026 study of 50 long-lived open-source projects found no consistent rise in code similarity so far (Marchezan et al.).
 - **More code, not more software.** In SlopCodeBench (Orlanski et al., 2026), code written by AI coding agents was 2.3 times more verbose than code in 473 open-source Python projects, and it grew more bloated with each round of changes in three out of four runs. Telling the agent what good code looks like cut the initial bloat by up to a third. A separate 2026 audit found that more capable models write more bloated, tightly coupled code, with volume a near-perfect predictor of structural decay (Zhu, Tsantalis and Rigby). In the field, an NBER study found autonomous coding agents raised developers' commits by 240% but actual software releases by only 30% (Demirer et al., 2026).
+- **We trust it more than we check it.** In a Stanford study, developers using an AI assistant wrote significantly less secure code, yet were more likely to believe it was secure (Perry et al., 2023). A Microsoft Research survey of 319 knowledge workers found that the more people trusted AI, the less critical thinking they reported (Lee et al., CHI 2025). Developers sense it: 84% use or plan to use AI tools, yet more distrust their accuracy (46%) than trust it (33%) (Stack Overflow Developer Survey, 2025).
+- **The mistakes are already costly.** In 2023 a New York judge fined lawyers $5,000 for filing a brief citing cases ChatGPT had invented (Mata v. Avianca). In 2024 a tribunal held Air Canada liable for a refund policy its chatbot made up, rejecting the airline's argument that the bot was responsible for its own actions (Moffatt v. Air Canada). In 2025 SaaStr founder Jason Lemkin said Replit's coding agent wiped a database in his project despite being told "eleven times in ALL CAPS" not to change any code.
 
 The effects are small to medium and mostly from short lab studies. The worry is how they compound across billions of uses.
 
@@ -141,6 +143,7 @@ So the next time a model hands you a 7, ask yourself what your 4 is.
 - Coronado-Blázquez, J. (2025). Deterministic or probabilistic? The psychology of LLMs as random number generators. <https://arxiv.org/abs/2502.19965>
 - Jentzsch, S., and Kersting, K. (2023). ChatGPT is fun, but it is not funny! *WASSA 2023*. <https://arxiv.org/abs/2306.04563>
 - Kubovy, M., and Psotka, J. (1976). The predominance of seven and the apparent spontaneity of numerical choices. *JEP: Human Perception and Performance*. <https://psycnet.apa.org/record/1977-00345-001>
+- Lee, H.-P., et al. (2025). The Impact of Generative AI on Critical Thinking. *CHI 2025*. <https://www.microsoft.com/en-us/research/publication/the-impact-of-generative-ai-on-critical-thinking-self-reported-reductions-in-cognitive-effort-and-confidence-effects-from-a-survey-of-knowledge-workers/>
 - Leslie, I. (2025). Why are LLMs fixated on the number 7? <https://www.ian-leslie.com/p/why-are-llms-fixated-on-the-number>
 - Van Koevering, K., and Kleinberg, J. (2024). How Random is Random? Evaluating the Randomness and Humaneness of LLMs' Coin Flips. <https://arxiv.org/abs/2406.00092>
 - Agarwal, D., Naaman, M., and Vashistha, A. (2025). AI Suggestions Homogenize Writing Toward Western Styles and Diminish Cultural Nuances. *CHI 2025*. <https://arxiv.org/abs/2409.11360>
@@ -155,8 +158,13 @@ So the next time a model hands you a 7, ask yourself what your 4 is.
 - Kirk, R., et al. (2024). Understanding the Effects of RLHF on LLM Generalisation and Diversity. *ICLR 2024*. <https://arxiv.org/abs/2310.06452>
 - Kobak, D., et al. (2024). Delving into LLM-assisted writing in biomedical publications through excess vocabulary. <https://arxiv.org/abs/2406.07016>
 - Liang, W., et al. (2024). Mapping the Increasing Use of LLMs in Scientific Papers. <https://arxiv.org/abs/2404.01268>
+- Mata v. Avianca, Inc., No. 1:22-cv-01461 (S.D.N.Y. 2023). <https://en.wikipedia.org/wiki/Mata_v._Avianca,_Inc.>
+- Moffatt v. Air Canada, 2024 BCCRT 149. <https://en.wikipedia.org/wiki/Moffatt_v._Air_Canada>
 - Orlanski, G., et al. (2026). SlopCodeBench: Benchmarking How Coding Agents Degrade Over Long-Horizon Iterative Tasks. <https://arxiv.org/abs/2603.24755>
 - Padmakumar, V., and He, H. (2024). Does Writing with Language Models Reduce Content Diversity? *ICLR 2024*. <https://arxiv.org/abs/2309.05196>
+- Perry, N., Srivastava, M., Kumar, D., and Boneh, D. (2023). Do Users Write More Insecure Code with AI Assistants? <https://arxiv.org/abs/2211.03622>
+- Sharwood, S. (2025). Vibe coding service Replit deleted production database. *The Register*. <https://www.theregister.com/2025/07/21/replit_saastr_vibe_coding_incident/>
 - Shumailov, I., et al. (2024). AI models collapse when trained on recursively generated data. *Nature* 631. <https://doi.org/10.1038/s41586-024-07566-y>
 - Zhu, Y., Tsantalis, N., and Rigby, P. C. (2026). AI-Generated Smells: An Analysis of Code and Architecture in LLM and Agent-Driven Development. <https://arxiv.org/abs/2605.02741>
+- Stack Overflow (2025). Developer Survey 2025: AI. <https://survey.stackoverflow.co/2025/ai>
 - Zhang, J., et al. (2025). Verbalized Sampling: How to Mitigate Mode Collapse and Unlock LLM Diversity. <https://arxiv.org/abs/2510.01171>
