@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "AI Does the Hard Part. That's the Problem."
+title: "Your Chatbot Gives Everyone the Same Easy Answer. Usually, It's 7."
 subtitle: "Before you read on, ask any chatbot to pick a number between 1 and 10."
 date: 2026-11-10
 kind: Opinion
