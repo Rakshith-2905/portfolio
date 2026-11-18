@@ -59,7 +59,7 @@ Most of these effects are small to medium and come from short lab studies. They 
 
 ## Why it happens
 
-Models are built to predict the likely. A language model learns from billions of sentences how likely each next word is. A setting called temperature then decides how hard it leans toward the likeliest options. Below 1, it effectively raises every probability to a power, so popular choices get more popular and rare ones nearly vanish. That is the cubing behind the 7.
+Models are built to predict the likely. A language model learns from billions of sentences how likely each next word is, given the sentence so far. A setting called temperature then decides how hard it leans toward the likeliest options. Below 1, it effectively raises every probability to a power, so popular choices get more popular and rare ones nearly vanish. That is the cubing behind the 7.
 
 Tuning rewards the familiar. Assistants are then fine-tuned on human ratings, and raters, like all of us, prefer text that feels typical: clear, balanced, safe. That works like turning the temperature down permanently, inside the model (Kirk et al.). In Padmakumar and He's essay study, the raw base model did not narrow people's ideas, while the tuned assistant cut unique key points by about 7%.
 
