@@ -12,7 +12,7 @@ It probably said 7. You may have seen that trick already. What interests me is w
 
 People do it too. In 1976, psychologists [Michael Kubovy and Joseph Psotka](https://psycnet.apa.org/record/1977-00345-001) asked 558 people for a random digit, and 28% said 7. Chatbots go much further. When the AI advertising consultancy Springboards asked the big models a hundred times each, GPT said 7 on 92 occasions, Claude on 90 and Gemini every time ([as reported by Ian Leslie](https://www.ian-leslie.com/p/why-are-llms-fixated-on-the-number)). Across six models, seven languages and 75,600 queries, [Javier Coronado-Blázquez](https://arxiv.org/abs/2502.19965) found that "7 is the preferred value by far for every single model." Chance would give 7 one time in ten.
 
-Take the human preference, raise it to roughly the third power, and you land on the chatbot numbers almost exactly. The model did not invent our bias. It learned it from us and turned it up: our habits, cubed.
+Take the human preference, raise it to roughly the third power, and you land close to the chatbot numbers. The model did not invent our bias. It learned it from us and turned it up: our habits, cubed.
 
 <figure>
   <img src="{{ '/assets/img/posts/oped/oped-seven.png' | relative_url }}" alt="Left: share of answers that are 7 as human preference is amplified, with people at 28% and chatbots at 80 to 92%. Right: the five most repeated jokes out of 1,008 requests.">
@@ -21,7 +21,7 @@ Take the human preference, raise it to roughly the third power, and you land on 
 
 For a number, who cares. But a cover letter, a product spec or an argument about social media goes through the same machinery. I feel that pull myself. English is not my first language, and a model can make my sentences fluent in seconds. It can also make them sound like everyone else's.
 
-But sameness is only the visible symptom. The bigger cost is what we skip to get there. The slow, hard part of writing, coding or learning is where we do our thinking, and AI is very good at doing that part for us.
+Sameness is only the visible symptom. The bigger cost is what we skip to get there. The slow, hard part of writing, coding or learning is where we do our thinking, and AI is very good at doing that part for us. Both costs come from the same move: handing the model the hard part and taking its likeliest answer. You get everyone's answer, and you skip the struggle that would have made it yours.
 
 The advice comes first. The evidence and the mechanics are further down for anyone who wants them.
 
@@ -29,7 +29,7 @@ The advice comes first. The evidence and the mechanics are further down for anyo
 
 A model will always offer you the 7: the likeliest answer, nicely phrased, with the hard part already done. For anything that matters, find your 4 first.
 
-1. **Hand off the chores, not the judgment.** Know which one you are asking for.
+1. **Hand off the chores, not the judgment.** Delegate the formatting; keep the argument.
 2. **Decide what good looks like before you start.** Otherwise twenty polished options pick for you.
 3. **Draft before you ask.** Let the model edit your thinking, not replace it.
 4. **Make it argue with you.** Ask what is wrong with your view, not to write it for you.
@@ -59,13 +59,13 @@ Most of these effects are small to medium and come from short lab studies. They 
 
 ## Why it happens
 
-Models are built to predict the likely. A language model learns from billions of sentences how likely each next word is, given the sentence so far. A setting called temperature then decides how hard it leans toward the likeliest options. Below 1, it effectively raises every probability to a power, so popular choices get more popular and rare ones nearly vanish. That is the cubing behind the 7.
+Models learn the whole range, then pick from the top. A language model learns from billions of sentences how likely each next word is, given the sentence so far, rare words included. But we rarely see that full range. A setting called temperature decides how hard it leans toward the likeliest options. Below 1, it effectively raises every probability to a power, so popular choices get more popular and rare ones nearly vanish.
 
-Tuning rewards the familiar. Assistants are then fine-tuned on human ratings, and raters, like all of us, prefer text that feels typical: clear, balanced, safe. That works like turning the temperature down permanently, inside the model (Kirk et al.). In Padmakumar and He's essay study, the raw base model did not narrow people's ideas, while the tuned assistant cut unique key points by about 7%.
+Tuning rewards the familiar. Assistants are then fine-tuned on human ratings, and raters, like all of us, prefer text that feels typical: clear, balanced, safe (Zhang et al.). That works like turning the temperature down permanently, inside the model, and it measurably reduces output diversity (Kirk et al.). In Padmakumar and He's essay study, the raw base model did not narrow people's ideas, while the tuned assistant cut unique key points by about 7%. Temperature and tuning together are the cubing behind the 7.
 
-And the loop closes. More and more published text is model-assisted, and the next models train on it. Each round, the rare cases go first (Shumailov et al., *Nature*). Keeping fresh human writing in the mix prevents the collapse (Gerstgrasser et al.).
+And the loop closes. More and more published text is model-assisted, and the next models train on it. Each round, the rare cases go first (Shumailov et al., *Nature*). Collapse is avoided when fresh human writing keeps being added alongside synthetic text rather than replaced by it (Gerstgrasser et al.).
 
-Emails converge first because they are the most delegated. Arguments follow, because we take the model's framing along with its sentences. Ideas come last.
+My guess is that emails converge first, because they are the most delegated. Arguments follow, because we take the model's framing along with its sentences. Ideas come last.
 
 <details class="math-box" markdown="1">
 <summary>For the curious: the math behind "cubed" (a two-minute read)</summary>
@@ -127,7 +127,7 @@ I use these tools every day, including for this article, and I build AI tutors f
 
 For those of us who build these tools, the job is to make them work with people, not instead of them: start from the user's words, measure how alike the outputs become, and reward the thinking over the polish.
 
-Seven is a fine answer. The trouble is that it is everyone's answer, turned up. In a world of 7s no single answer is wrong, but nobody picks 4, and the scarecrow joke is the only joke. Most progress has come from the less likely choice: an odd sentence, a minority view, someone framing the problem differently. Used carelessly, these tools hand us more 7s. Used deliberately, they give everyone the fluency to say something only they would say.
+Seven is a fine answer. The trouble is that it is everyone's answer, turned up. In a world of 7s no single answer is wrong, but nobody picks 4, and every joke is the one ChatGPT told 140 times out of 1,008. Most progress has come from the less likely choice: an odd sentence, a minority view, someone framing the problem differently. Used carelessly, these tools hand us more 7s. Used deliberately, they give everyone the fluency to say something only they would say.
 
 So the next time a model offers to do the hard part, keep some of it for yourself. Ask what your 4 is.
 
