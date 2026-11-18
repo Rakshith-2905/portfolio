@@ -46,22 +46,23 @@ And once in a while, write something with no help at all.
   <figcaption>Three findings, one each for writing, code and how far this has already spread. Sources below.</figcaption>
 </figure>
 
-- It can do the learning for you. About 1,000 high-school students in Turkey practised math with GPT-4. With a plain chat interface they did 48% better in practice, but 17% worse on the exam once it was taken away. A tutor version with safeguards built in avoided most of that drop (Bastani et al., PNAS 2025).
-- Writing and opinions converge. AI ideas made stories about 8% more novel but measurably more similar to each other (Doshi and Hauser, 293 writers). With a GPT-4o autocomplete, Indian writers drifted toward Western styles (Agarwal et al.). People writing with a quietly biased assistant were about twice as likely to argue its side, and their own views shifted afterwards (Jakesch et al., 1,506 people).
-- Code converges and bloats. Models find about two distinct algorithms where people find three (EMNLP Findings 2025), and agent-written code is 2.3 times more verbose than code in human projects (SlopCodeBench, 2026). Real repositories show no consistent rise in similarity yet (Marchezan et al., 2026).
-- It is already everywhere. Up to 17.5% of sentences in computer-science abstracts were substantially LLM-modified by early 2024 (Liang et al.), and "delves" became 28 times more common in PubMed than its trend predicts (Kobak et al.).
+- **Learning: practice up, exams down.** With plain GPT-4, about 1,000 high-school students in Turkey scored 48% higher in practice, then 17% lower on the exam once it was taken away. A tutor version with safeguards avoided most of the drop. *(Bastani et al., PNAS 2025)*
+- **Writing: better, but more alike.** AI ideas made stories about 8% more novel but more similar to each other *(Doshi & Hauser)*. Indian writers using an AI autocomplete drifted toward Western styles *(Agarwal et al.)*.
+- **Opinions: they move too.** People writing with a quietly biased assistant were about twice as likely to argue its side, and their own views shifted *(Jakesch et al.)*.
+- **Code: fewer ideas, more bloat.** Models find about two distinct algorithms where people find three *(EMNLP 2025)*, and agent-written code is 2.3 times more verbose *(SlopCodeBench)*. Real repositories show no clear rise in similarity yet *(Marchezan et al.)*.
+- **Already everywhere.** Up to 17.5% of sentences in computer-science abstracts were LLM-modified by early 2024 *(Liang et al.)*, and "delves" turns up 28 times more often in PubMed than its trend predicts *(Kobak et al.)*.
 
-Most of these effects are small to medium and come from short lab studies. They matter because they add up across billions of uses.
+*Most of these effects are small to medium and come from short lab studies. They matter because they add up across billions of uses.*
 
 ## Why it happens
 
-A language model learns how likely each next word is, given the sentence so far. To do that well, it absorbs our patterns of writing and thinking, habits included, like the sense that 7 feels random. It learns the rare options too. We just rarely get to see them.
+**1. Models learn our habits.** A language model learns how likely each next word is, given the sentence so far. Along the way it absorbs our patterns, including the sense that 7 feels random. It knows the rare options too. We just rarely see them.
 
-Tuning is what narrows the output. Chatbots are fine-tuned on human ratings, and raters, like all of us, tend to favor text that feels familiar: clear, balanced, safe. Zhang et al. found this typicality bias in real preference data and showed it acts like permanently turning down the randomness inside the model. Kirk et al. measured the result: this kind of tuning substantially reduces output diversity. In Padmakumar and He's essay study, writing with the raw base model did not narrow people's ideas, while the tuned assistant cut unique key points by about 7%. A sampling setting called temperature can sharpen things further, but it isn't the main cause: Coronado-Blázquez found "no strong dependence" of the 7 on temperature.
+**2. Tuning narrows them.** Chatbots are tuned on human ratings, and raters favor the familiar. This *typicality bias* acts like permanently turning down the randomness *(Zhang et al.)* and measurably cuts diversity *(Kirk et al.)*. With a raw base model, people's essays didn't narrow. With the tuned assistant, unique ideas fell about 7% *(Padmakumar & He)*. The temperature setting adds a little, but it isn't the main cause *(Coronado-Blázquez)*.
 
-And the loop closes. More and more published text is chatbot-assisted, and the next models train on it. Each round, the rare cases go first (Shumailov et al., *Nature*). In experiments, keeping the original human data alongside the synthetic data, instead of replacing it, avoids the collapse (Gerstgrasser et al.).
+**3. The loop closes.** Chatbot-assisted text feeds the next generation of models, and each round the rare cases go first *(Shumailov et al., Nature)*. Keeping the original human data alongside the synthetic data avoids the collapse *(Gerstgrasser et al.)*.
 
-My guess is that emails converge first, because they are the most delegated. Arguments follow, because we take the framing along with the sentences. Ideas come last.
+> **My guess:** emails converge first, because they are the most delegated. Then arguments, because we take the framing along with the sentences. Ideas come last.
 
 <details class="math-box" markdown="1">
 <summary>For the curious: the math behind "cubed" (a two-minute read)</summary>
