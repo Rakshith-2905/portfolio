@@ -46,8 +46,8 @@ And once in a while, write something with no help at all.
   <figcaption>Three findings, one each for writing, code and how far this has already spread. Sources below.</figcaption>
 </figure>
 
-- **Learning: practice up, exams down.** With plain GPT-4, about 1,000 high-school students in Turkey scored 48% higher in practice, then 17% lower on the exam once it was taken away. A tutor version with safeguards avoided most of the drop. *(Bastani et al., PNAS 2025)*
-- **Writing: better, but more alike.** AI ideas made stories about 8% more novel but more similar to each other *(Doshi & Hauser)*. Indian writers using an AI autocomplete drifted toward Western styles *(Agarwal et al.)*.
+- **Learning: practice up, exams down.** About 1,000 high-school students in Turkey practised math with plain GPT-4. They scored 48% higher in practice, then 17% lower on the exam once it was taken away. A tutor version with safeguards avoided most of the drop. *(Bastani et al., PNAS 2025)*
+- **Writing: better, but more alike.** Writers given AI story ideas wrote stories about 8% more novel, but more similar to each other *(Doshi & Hauser)*. Indian writers using an AI autocomplete drifted toward Western styles *(Agarwal et al.)*.
 - **Opinions: they move too.** People writing with a quietly biased assistant were about twice as likely to argue its side, and their own views shifted *(Jakesch et al.)*.
 - **Code: fewer ideas, more bloat.** Models find about two distinct algorithms where people find three *(EMNLP 2025)*, and agent-written code is 2.3 times more verbose *(SlopCodeBench)*. Real repositories show no clear rise in similarity yet *(Marchezan et al.)*.
 - **Already everywhere.** Up to 17.5% of sentences in computer-science abstracts were LLM-modified by early 2024 *(Liang et al.)*, and "delves" turns up 28 times more often in PubMed than its trend predicts *(Kobak et al.)*.
@@ -56,9 +56,9 @@ And once in a while, write something with no help at all.
 
 ## Why it happens
 
-**1. Models learn our habits.** A language model learns how likely each next word is, given the sentence so far. Along the way it absorbs our patterns, including the sense that 7 feels random. It knows the rare options too. We just rarely see them.
+**1. Models learn our habits.** A language model learns how likely each next word is, given the sentence so far. Along the way it absorbs our patterns, including the sense that 7 feels random. The unusual options are in there too. We just rarely see them.
 
-**2. Tuning narrows them.** Chatbots are tuned on human ratings, and raters favor the familiar. This *typicality bias* acts like permanently turning down the randomness *(Zhang et al.)* and measurably cuts diversity *(Kirk et al.)*. With a raw base model, people's essays didn't narrow. With the tuned assistant, unique ideas fell about 7% *(Padmakumar & He)*. The temperature setting adds a little, but it isn't the main cause *(Coronado-Blázquez)*.
+**2. Tuning narrows the output.** Chatbots are tuned on human ratings, and raters favor the familiar. This *typicality bias* works like permanently turning down the randomness *(Zhang et al.)*. The result is measurably less variety *(Kirk et al.)*. Writing with the raw base model didn't narrow people's essays. Writing with the tuned assistant cut their unique ideas by about 7% *(Padmakumar & He)*. The temperature setting adds a little, but it isn't the main cause *(Coronado-Blázquez)*.
 
 **3. The loop closes.** Chatbot-assisted text feeds the next generation of models, and each round the rare cases go first *(Shumailov et al., Nature)*. Keeping the original human data alongside the synthetic data avoids the collapse *(Gerstgrasser et al.)*.
 
