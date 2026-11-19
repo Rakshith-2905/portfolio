@@ -4,6 +4,7 @@ kind: Opinion
 title: "Your Chatbot Gives Everyone the Same Easy Answer. Usually, It's 7."
 subtitle: "Before you read on, ask any chatbot to pick a number between 1 and 10."
 date: 2026-11-16
+image: /assets/img/posts/oped/who-picks-7-og.png
 excerpt: "Every chatbot picks 7. The bigger cost is the struggle we skip: the slow, hard part of writing, coding and learning is where we do our thinking, and AI is very good at doing it for us."
 ---
 
